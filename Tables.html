@@ -206,15 +206,107 @@
     </tr>
 		<tr>
       <td><a href="http://en.wikipedia.org/wiki/Binary_search_tree">Binary Search Tree</a></td>
-      <td><code class="green">-</code></td>
+      <td><code>-</code></td>
       <td><code class="green">O(log(n))</code></td>
       <td><code class="green">O(log(n))</code></td>
       <td><code class="green">O(log(n))</code></td>
-			<td><code class="green">-</code></td>
+			<td><code>-</code></td>
       <td><code class="red">O(n)</code></td>
       <td><code class="red">O(n)</code></td>
       <td><code class="red">O(n)</code></td>
 			<td><code class="red">O(n)</code></td>
     </tr>
+		<tr>
+      <td><a href="http://en.wikipedia.org/wiki/B_tree">B-Tree</a></td>
+      <td><code>-</code></td>
+      <td><code class="green">O(log(n))</code></td>
+      <td><code class="green">O(log(n))</code></td>
+      <td><code class="green">O(log(n))</code></td>
+			<td><code>-</code></td>
+      <td><code class="red">O(log(n))</code></td>
+      <td><code class="red">O(log(n))</code></td>
+      <td><code class="red">O(log(n))</code></td>
+			<td><code class="red">O(n)</code></td>
+    </tr>
+		<tr>
+      <td><a href="http://en.wikipedia.org/wiki/Red-black_tree">Red-Black Tree</a></td>
+      <td><code>-</code></td>
+      <td><code class="green">O(log(n))</code></td>
+      <td><code class="green">O(log(n))</code></td>
+      <td><code class="green">O(log(n))</code></td>
+			<td><code>-</code></td>
+      <td><code class="red">O(log(n))</code></td>
+      <td><code class="red">O(log(n))</code></td>
+      <td><code class="red">O(log(n))</code></td>
+			<td><code class="red">O(n)</code></td>
+    </tr>
+		<tr>
+      <td><a href="http://en.wikipedia.org/wiki/AVL_tree">AVL Tree</a></td>
+      <td><code>-</code></td>
+      <td><code class="green">O(log(n))</code></td>
+      <td><code class="green">O(log(n))</code></td>
+      <td><code class="green">O(log(n))</code></td>
+			<td><code>-</code></td>
+      <td><code class="red">O(log(n))</code></td>
+      <td><code class="red">O(log(n))</code></td>
+      <td><code class="red">O(log(n))</code></td>
+			<td><code class="red">O(n)</code></td>
+    </tr>
   </tbody>
 </table>
+
+<h2 id="graphs">Graphs</h2>
+<table>
+	<tbody>
+		<tr>
+			<th></th>
+			<th><a href="http://en.wikipedia.org/wiki/Adjacency_list">Adjacency list</a></th>
+			<th><a href="http://en.wikipedia.org/wiki/Incidence_list">Incidence listi</a></th>
+			<th><a href="http://en.wikipedia.org/wiki/Adjacency_matrix">Adjacency matrix</a></th>
+			<th><a href="http://en.wikipedia.org/wiki/Incidence_matrix">Incidence matrix</a></th>
+		</tr>
+		<tr>
+			<td>Storage</td>
+			<td><code>O(|V|+|E|)</code></td>
+			<td><code>O(|V|+|E|)</code></td>
+			<td><code>O(|V|^2)</code></td>
+			<td><code>O(|V| &sdot; |E|)</code></td>
+		</tr>
+		<tr>
+			<td>Add vertex</td>
+			<td><code>O(1)</code></td>
+			<td><code>O(1)</code></td>
+			<td><code>O(|V|^2)</code></td>
+			<td><code>O(|V| &sdot; |E|)</code></td>
+		</tr>
+		<tr>
+			<td>Add edge</td>
+			<td><code>O(1)</code></td>
+			<td><code>O(1)</code></td>
+			<td><code>O(1)</code></td>
+			<td><code>O(|V| &sdot; |E|)</code></td>
+		</tr>
+		<tr>
+			<td>Remove vertex</td>
+			<td><code>O(|E|)</code></td>
+			<td><code>O(|E|)</code></td>
+			<td><code>O(|V|^2)</code></td>
+			<td><code>O(|V| &sdot; |E|)</code></td>
+		</tr>
+		<tr>
+			<td>Remove edge</td>
+			<td><code>O(|E|)</code></td>
+			<td><code>O(|E|)</code></td>
+			<td><code>O(1)</code></td>
+			<td><code>O(|V| &sdot; |E|)</code></td>
+		</tr>
+		<tr>
+			<td>Query:</td>
+			<td><code>O(|V|)</code></td>
+			<td><code>O(|E|)</code></td>
+			<td><code>O(1)</code></td>
+			<td><code>O(|E|)</code></td>
+		</tr>
+	</tbody>
+</table>
+<p><code>|V|</code> denotes the number of vertices; <code>|E|</code> denotes the number of edges.</p>
