@@ -462,3 +462,70 @@
 		</tr>
 	</tbody>
 </table>
+
+<h2 id="growth">Notation for asymptotic growth</h2>
+<table class="table table-bordered table-striped">
+	<tr>
+		<th>letter</th>
+		<th>bound</th> 	
+		<th>growth</th>
+	</tr>
+	<tr>
+		<td>(theta) &#920;</td>
+		<td>upper and lower, tight<a href="#footnote-1"><sup>[1]</sup></a></td>
+		<td>equal<a href="#footnote-1"><sup>[2]</sup></a></td>
+	</tr>
+	<tr>
+		<td>(big-oh) O</td>
+		<td>upper, tightness unknown</td>
+		<td>less than or equal<a href="#footnote-1"><sup>[3]</sup></a></td>
+	</tr>
+	<tr>
+		<td>(small-oh) o</td>
+		<td>upper, not tight</td>
+		<td>less than</td>
+	</tr>
+	<tr>
+		<td>(big omega) &#937;</td>
+		<td>lower, tightness unknown</td>
+		<td>greater than or equal</td>
+	</tr>
+	<tr>
+		<td>(small omega) &#969;</td>
+		<td>lower, not tight</td>
+		<td>greater than</td>
+	</tr>	
+</table>
+
+<p id="footnote-1">[1] Big O is the upper bound, while Omega is the lower bound. Theta requires both Big O and Omega, so that's why it's referred to as a tight bound (it must be both the upper and lower bound). For example, an algorithm taking Omega(n log n) takes at least n log n time but has no upper limit. An algorithm taking Theta(n log n) is far preferential since it takes AT LEAST n log n (Omega n log n) and NO MORE THAN n log n (Big O n log n).<sup><a href="http://stackoverflow.com/a/464081/412916">SO</a></sup></p>
+<p id="footnote-2">[2] f(x)=&#920;(g(n)) means f (the running time of the algorithm) grows exactly like g when n (input size) gets larger. In other words, the growth rate of f(x) is asymptotically proportional to g(n).</p>
+<p id="footnote-1">[3] Same thing. Here the growth rate is no faster than g(n). big-oh is the most useful because represents the worst-case behavior.</p>
+
+
+In short, if algorithm is __ then its performance is __ 
+<table class="table table-bordered table-striped">
+	<tr>
+		<th>algorithm</th>
+		<th>performance</th> 	
+	</tr>
+	<tr>
+		<td>o(n)</td>
+		<td>&lt; n</td>
+	</tr>
+	<tr>
+		<td>O(n)</td>
+		<td>&#8804; n</td>
+	</tr>
+	<tr>
+		<td>&#920;(n)</td>
+		<td>= n</td>
+	</tr>
+	<tr>
+		<td>&#937;(n)</td>
+		<td>&#8805; n</td>
+	</tr>
+	<tr>
+		<td>&#969;(n)</td>
+		<td>&gt; n</td>
+	</tr>	
+</table>
