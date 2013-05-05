@@ -58,6 +58,14 @@
       </td>
     </tr>
     <tr>
+        <td><a href="http://en.wikipedia.org/wiki/Interpolation_search">Interpolation</a></td>
+        <td>-</td>
+        <td><code class="green">O(1)</code></td>
+        <td><code class="green">O(log(log(n)))</code></td>
+        <td><code class="red">O(n)</code></td>
+        <td><code class="green">O(1)</code></td>
+    </tr>
+    <tr>
       <td><a href="http://en.wikipedia.org/wiki/Brute-force_search">Linear (Brute Force)</a></td>
       <td>Array</td>
       <td><code class="green">O(1)</code></td>
@@ -158,6 +166,22 @@
       <td><code class="red">O(n^2)</code></td>
       <td><code class="red">O(n^2)</code></td>
       <td><code class="green">O(1)</code></td>
+    </tr>
+    <tr>
+      <td><a rel="tooltip" title="Only for integers with range k" href="http://en.wikipedia.org/wiki/Bucket_sort">Bucket Sort</a></td>
+      <td>Array</td>
+      <td><code class="green">O(n+k)</code></td>
+      <td><code class="green">O(n+k)</code></td>
+      <td><code class="red">O(n^2)</code></td>
+      <td><code class="yellow">O(nk)</code></td>
+    </tr>
+    <tr>
+      <td><a rel="tooltip" title="Constant number of digits 'k'" href="http://en.wikipedia.org/wiki/Radix_sort">Radix Sort</a></td>
+      <td>Array</td>
+      <td><code class="green">O(nk)</code></td>
+      <td><code class="green">O(nk)</code></td>
+      <td><code class="green">O(nk)</code></td>
+      <td><code class="yellow">O(n+k)</code></td>
     </tr>
   </tbody>
 </table>
@@ -302,6 +326,79 @@
   </tbody>
 </table>
 
+<h2 id="heaps">Heaps</h2>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Heaps</th>
+            <th colspan="7">Time Complexity</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th>Heapify</th>
+            <th>Find Max</th>  
+            <th>Extract Max</th>  
+            <th>Increase Key</th>
+            <th>Insert</th>
+            <th>Delete</th>
+            <th>Merge</th>  
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="http://en.wikipedia.org/wiki/Linked_list">Linked List (sorted)</a></td>
+            <td><code>-</code></td> <!-- heapify -->
+            <td><code class="green">O(1)</code></td> <!-- Find max -->
+            <td><code class="green">O(1)</code></td> <!-- Extract max -->
+            <td><code class="red">O(n)</code></td> <!-- Increase -->
+            <td><code class="red">O(n)</code></td> <!-- insert -->
+            <td><code class="green">O(1)</code></td> <!-- delete -->
+            <td><code class="red">O(m+n)</code></td> <!-- merge -->
+        </tr>
+        <tr>
+            <td><a href="http://en.wikipedia.org/wiki/Linked_list">Linked List (unsorted)</a></td>
+            <td><code>-</code></td> <!-- heapify -->
+            <td><code class="red">O(n)</code></td> <!-- Find max -->
+            <td><code class="red">O(n)</code></td> <!-- Extract max -->
+            <td><code class="green">O(1)</code></td> <!-- Increase -->
+            <td><code class="green">O(1)</code></td> <!-- insert -->
+            <td><code class="green">O(1)</code></td> <!-- delete -->
+            <td><code class="green">O(1)</code></td> <!-- merge -->
+        </tr>
+        <tr>
+            <td><a href="http://en.wikipedia.org/wiki/Binary_heap">Binary Heap</a></td>
+            <td><code class="yellow">O(log(n))</code></td>
+            <td><code class="green">O(1)</code></td>
+            <td><code class="yellow">O(log(n))</code></td>
+            <td><code class="yellow">O(log(n))</code></td>
+            <td><code class="yellow">O(log(n))</code></td>
+            <td><code class="yellow">O(log(n))</code></td>
+            <td><code class="red">O(m+n)</code></td>
+        </tr>
+        <tr>
+            <td><a href="http://en.wikipedia.org/wiki/Binomial_heap">Binomial Heap</a></td>
+            <td><code>-</code></td>
+            <td><code class="yellow">O(log(n))</code></td>
+            <td><code class="yellow">O(log(n))</code></td>
+            <td><code class="yellow">O(log(n))</code></td>
+            <td><code class="yellow">O(log(n))</code></td>
+            <td><code class="yellow">O(log(n))</code></td>
+            <td><code class="yellow">O(log(n))</code></td>
+        </tr>
+        <tr>
+            <td><a href="http://en.wikipedia.org/wiki/Fibonacci_heap">Fibonacci Heap</a></td>
+            <td><code>-</code></td>
+            <td><code class="green">O(1)</code></td>
+            <td><code rel="tooltip" title="Amortized" class="yellow">O(log(n))*</code></td>
+            <td><code rel="tooltip" title="Amortized" class="green">O(1)*</code></td>
+            <td><code class="green">O(1)</code></td>
+            <td><code rel="tooltip" title="Amortized" class="yellow">O(log(n))*</code></td>
+            <td><code class="green">O(1)</code></td>
+        </tr>
+        </tbody>
+    </table>
+
 <h2 id="graphs">Graphs</h2>
 <table class="table table-bordered table-striped">
 	<tbody>
@@ -352,4 +449,3 @@
 		</tr>
 	</tbody>
 </table>
-<p><code>|V|</code> denotes the number of vertices; <code>|E|</code> denotes the number of edges.</p>
