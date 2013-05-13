@@ -1,15 +1,15 @@
-<table class="table table-bordered table-striped" id="legend">
+<table class="table" id="legend">
   <tbody>
     <tr>
-    	<td><code class="green">Good</code></td>
-    	<td><code class="yellow">Fair</code></td>
-    	<td><code class="red">Poor</code></td>
+      <td><code class="bigO good">Good</code></td>
+      <td><code class="bigO fair">Fair</code></td>
+      <td><code class="bigO poor">Poor</code></td>
     </tr>
   </tbody>
 </table>
 
 <h2 id="searching">Searching</h2>
-<table class="table table-bordered table-striped">
+<table class="table table-bordered">
   <thead>
     <tr>
       <th>Algorithm</th>
@@ -20,9 +20,9 @@
     <tr>
       <th></th>
       <th></th>
-      <th>Average</th>  
-      <th>Worst</th> 
-      <th>Worst</th>                
+      <th>Average</th>
+      <th>Worst</th>
+      <th>Worst</th>
     </tr>
   </thead>
   <tbody>
@@ -30,62 +30,62 @@
       <td><a href="http://en.wikipedia.org/wiki/Depth-first_search">Depth First Search (DFS)</a></td>
       <td>Graph of |V| vertices and |E| edges</td>
       <td><code>-</code></td>
-      <td><code class="green">O(|E| + |V|)</code></td>
-      <td><code class="green">O(|V|)</code></td>
+      <td><code class="bigO good">O(|E| + |V|)</code></td>
+      <td><code class="bigO good">O(|V|)</code></td>
     </tr>
     <tr>
       <td><a href="http://en.wikipedia.org/wiki/Breadth-first_search">Breadth First Search (BFS)</a></td>
       <td>Graph of |V| vertices and |E| edges</td>
       <td><code>-</code></td>
-      <td><code class="green">O(|E| + |V|)</code></td>
-      <td><code class="green">O(|V|)</code></td>
+      <td><code class="bigO good">O(|E| + |V|)</code></td>
+      <td><code class="bigO good">O(|V|)</code></td>
     </tr>
     <tr>
       <td><a href="http://en.wikipedia.org/wiki/Binary_search_algorithm">Binary search</a></td>
       <td>Sorted array of n elements</td>
-      <td> 
-        <code class="green">O(log(n))</code>
+      <td>
+        <code class="bigO good">O(log(n))</code>
       </td>
       <td>
-        <code class="green">O(log(n))</code>
+        <code class="bigO good">O(log(n))</code>
       </td>
       <td>
-        <code class="green">O(1)</code>
+        <code class="bigO good">O(1)</code>
       </td>
     </tr>
     <tr>
       <td><a href="http://en.wikipedia.org/wiki/Brute-force_search">Linear (Brute Force)</a></td>
       <td>Array</td>
-      <td><code class="red">O(n)</code></td>
-      <td><code class="red">O(n)</code></td>
-      <td><code class="green">O(1)</code></td>
+      <td><code class="bigO poor">O(n)</code></td>
+      <td><code class="bigO poor">O(n)</code></td>
+      <td><code class="bigO good">O(1)</code></td>
     </tr>
     <tr>
       <td><a href="http://en.wikipedia.org/wiki/Dijkstra's_algorithm">Shortest path by Dijkstra,<br>using a Min-heap as priority queue</a></td>
       <td>Graph with |V| vertices and |E| edges</td>
-      <td><code class="yellow">O((|V| + |E|) log |V|)</code></td>
-      <td><code class="yellow">O((|V| + |E|) log |V|)</code></td>
-      <td><code class="yellow">O(|V|)</code></td>
+      <td><code class="bigO fair">O((|V| + |E|) log |V|)</code></td>
+      <td><code class="bigO fair">O((|V| + |E|) log |V|)</code></td>
+      <td><code class="bigO fair">O(|V|)</code></td>
     </tr>
     <tr>
       <td><a href="http://en.wikipedia.org/wiki/Dijkstra's_algorithm">Shortest path by Dijkstra,<br>using an unsorted array as priority queue</a></td>
       <td>Graph with |V| vertices and |E| edges</td>
-      <td><code class="yellow">O(|V|^2)</code></td>
-      <td><code class="yellow">O(|V|^2)</code></td>
-      <td><code class="yellow">O(|V|)</code></td>
+      <td><code class="bigO fair">O(|V|^2)</code></td>
+      <td><code class="bigO fair">O(|V|^2)</code></td>
+      <td><code class="bigO fair">O(|V|)</code></td>
     </tr>
     <tr>
       <td><a href="http://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm">Shortest path by Bellman-Ford</a></td>
       <td>Graph with |V| vertices and |E| edges</td>
-      <td><code class="yellow">O(|V||E|)</code></td>
-      <td><code class="yellow">O(|V||E|)</code></td>
-      <td><code class="yellow">O(|V|)</code></td>
+      <td><code class="bigO fair">O(|V||E|)</code></td>
+      <td><code class="bigO fair">O(|V||E|)</code></td>
+      <td><code class="bigO fair">O(|V|)</code></td>
     </tr>
   </tbody>
 </table>
 
 <h2 id="sorting">Sorting</h2>
-<table class="table table-bordered table-striped">
+<table class="table table-bordered">
   <thead>
     <tr>
       <th>Algorithm</th>
@@ -97,81 +97,81 @@
       <th></th>
       <th></th>
       <th>Best</th>
-      <th>Average</th>  
-      <th>Worst</th>  
-      <th>Worst</th>                
+      <th>Average</th>
+      <th>Worst</th>
+      <th>Worst</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td><a href="http://en.wikipedia.org/wiki/Quicksort">Quicksort</a></td>
       <td>Array</td>
-      <td><code class="yellow">O(n log(n))</code></td>
-      <td><code class="green">O(n log(n))</code></td>
-      <td><code class="red">O(n^2)</code></td>
-      <td><code class="yellow">O(log(n))</code></td>
+      <td><code class="bigO fair">O(n log(n))</code></td>
+      <td><code class="bigO good">O(n log(n))</code></td>
+      <td><code class="bigO poor">O(n^2)</code></td>
+      <td><code class="bigO fair">O(log(n))</code></td>
     </tr>
     <tr>
       <td><a href="http://en.wikipedia.org/wiki/Merge_sort">Mergesort</a></td>
       <td>Array</td>
-      <td><code class="yellow">O(n log(n))</code></td>
-      <td><code class="green">O(n log(n))</code></td>
-      <td><code class="green">O(n log(n))</code></td>
-      <td><code class="red">O(n)</code></td>
+      <td><code class="bigO fair">O(n log(n))</code></td>
+      <td><code class="bigO good">O(n log(n))</code></td>
+      <td><code class="bigO good">O(n log(n))</code></td>
+      <td><code class="bigO poor">O(n)</code></td>
     </tr>
     <tr>
       <td><a href="http://en.wikipedia.org/wiki/Heapsort">Heapsort</a></td>
       <td>Array</td>
-      <td><code class="yellow">O(n log(n))</code></td>
-      <td><code class="green">O(n log(n))</code></td>
-      <td><code class="green">O(n log(n))</code></td>
-      <td><code class="green">O(1)</code></td>
+      <td><code class="bigO fair">O(n log(n))</code></td>
+      <td><code class="bigO good">O(n log(n))</code></td>
+      <td><code class="bigO good">O(n log(n))</code></td>
+      <td><code class="bigO good">O(1)</code></td>
     </tr>
     <tr>
       <td><a href="http://en.wikipedia.org/wiki/Bubble_sort">Bubble Sort</a></td>
       <td>Array</td>
-      <td><code class="green">O(n)</code></td>
-      <td><code class="red">O(n^2)</code></td>
-      <td><code class="red">O(n^2)</code></td>
-      <td><code class="green">O(1)</code></td>
+      <td><code class="bigO good">O(n)</code></td>
+      <td><code class="bigO poor">O(n^2)</code></td>
+      <td><code class="bigO poor">O(n^2)</code></td>
+      <td><code class="bigO good">O(1)</code></td>
     </tr>
     <tr>
       <td><a href="http://en.wikipedia.org/wiki/Insertion_sort">Insertion Sort</a></td>
       <td>Array</td>
-      <td><code class="green">O(n)</code></td>
-      <td><code class="red">O(n^2)</code></td>
-      <td><code class="red">O(n^2)</code></td>
-      <td><code class="green">O(1)</code></td>
+      <td><code class="bigO good">O(n)</code></td>
+      <td><code class="bigO poor">O(n^2)</code></td>
+      <td><code class="bigO poor">O(n^2)</code></td>
+      <td><code class="bigO good">O(1)</code></td>
     </tr>
-	<tr>
+  <tr>
       <td><a href="http://en.wikipedia.org/wiki/Selection_sort">Select Sort</a></td>
       <td>Array</td>
-      <td><code class="red">O(n^2)</code></td>
-      <td><code class="red">O(n^2)</code></td>
-      <td><code class="red">O(n^2)</code></td>
-      <td><code class="green">O(1)</code></td>
+      <td><code class="bigO poor">O(n^2)</code></td>
+      <td><code class="bigO poor">O(n^2)</code></td>
+      <td><code class="bigO poor">O(n^2)</code></td>
+      <td><code class="bigO good">O(1)</code></td>
     </tr>
     <tr>
       <td><a rel="tooltip" title="Only for integers with range k" href="http://en.wikipedia.org/wiki/Bucket_sort">Bucket Sort</a></td>
       <td>Array</td>
-      <td><code class="green">O(n+k)</code></td>
-      <td><code class="green">O(n+k)</code></td>
-      <td><code class="red">O(n^2)</code></td>
-      <td><code class="yellow">O(nk)</code></td>
+      <td><code class="bigO good">O(n+k)</code></td>
+      <td><code class="bigO good">O(n+k)</code></td>
+      <td><code class="bigO poor">O(n^2)</code></td>
+      <td><code class="bigO fair">O(nk)</code></td>
     </tr>
     <tr>
       <td><a rel="tooltip" title="Constant number of digits 'k'" href="http://en.wikipedia.org/wiki/Radix_sort">Radix Sort</a></td>
       <td>Array</td>
-      <td><code class="green">O(nk)</code></td>
-      <td><code class="green">O(nk)</code></td>
-      <td><code class="green">O(nk)</code></td>
-      <td><code class="yellow">O(n+k)</code></td>
+      <td><code class="bigO good">O(nk)</code></td>
+      <td><code class="bigO good">O(nk)</code></td>
+      <td><code class="bigO good">O(nk)</code></td>
+      <td><code class="bigO fair">O(n+k)</code></td>
     </tr>
   </tbody>
 </table>
 
 <h2 id="data-structures">Data Structures</h2>
-<table class="table table-bordered table-striped">
+<table class="table table-bordered">
   <thead>
     <tr>
       <th>Data Structure</th>
@@ -180,151 +180,151 @@
     </tr>
     <tr>
       <th></th>
-      <th colspan="4">Average</th>  
-      <th colspan="4">Worst</th>                
-      <th>Worst</th>                
+      <th colspan="4">Average</th>
+      <th colspan="4">Worst</th>
+      <th>Worst</th>
     </tr>
     <tr>
       <th></th>
-			<th>Indexing</th>
-			<th>Search</th>
-      <th>Insertion</th>  
-      <th>Deletion</th>  
-			<th>Indexing</th>
-			<th>Search</th>
-      <th>Insertion</th>  
-      <th>Deletion</th>  
-    	<th></th>
-		</tr>
+      <th>Indexing</th>
+      <th>Search</th>
+      <th>Insertion</th>
+      <th>Deletion</th>
+      <th>Indexing</th>
+      <th>Search</th>
+      <th>Insertion</th>
+      <th>Deletion</th>
+      <th></th>
+    </tr>
   </thead>
   <tbody>
     <tr>
       <td><a href="http://en.wikipedia.org/wiki/Array_data_structure">Basic Array</a></td>
-      <td><code class="green">O(1)</code></td>
-      <td><code class="red">O(n)</code></td>
+      <td><code class="bigO good">O(1)</code></td>
+      <td><code class="bigO poor">O(n)</code></td>
       <td><code>-</code></td>
       <td><code>-</code></td>
-			<td><code class="green">O(1)</code></td>
-      <td><code class="red">O(n)</code></td>
-			<td><code>-</code></td>
+      <td><code class="bigO good">O(1)</code></td>
+      <td><code class="bigO poor">O(n)</code></td>
       <td><code>-</code></td>
-			<td><code class="yellow">O(n)</code></td>
+      <td><code>-</code></td>
+      <td><code class="bigO fair">O(n)</code></td>
     </tr>
     <tr>
       <td><a href="http://en.wikipedia.org/wiki/Dynamic_array">Dynamic Array</a></td>
-      <td><code class="green">O(1)</code></td>
-      <td><code class="red">O(n)</code></td>
-      <td><code class="red">O(n)</code></td>
+      <td><code class="bigO good">O(1)</code></td>
+      <td><code class="bigO poor">O(n)</code></td>
+      <td><code class="bigO poor">O(n)</code></td>
       <td><code>-</code></td>
-			<td><code class="green">O(1)</code></td>
-      <td><code class="red">O(n)</code></td>
-      <td><code class="red">O(n)</code></td>
+      <td><code class="bigO good">O(1)</code></td>
+      <td><code class="bigO poor">O(n)</code></td>
+      <td><code class="bigO poor">O(n)</code></td>
       <td><code>-</code></td>
-			<td><code class="yellow">O(n)</code></td>
+      <td><code class="bigO fair">O(n)</code></td>
     </tr>
-		<tr>
+    <tr>
       <td><a href="http://en.wikipedia.org/wiki/Singly_linked_list#Singly_linked_lists">Singly-Linked List</a></td>
-      <td><code class="red">O(n)</code></td>
-      <td><code class="red">O(n)</code></td>
-      <td><code class="green">O(1)</code></td>
-      <td><code class="green">O(1)</code></td>
-			<td><code class="red">O(n)</code></td>
-      <td><code class="red">O(n)</code></td>
-      <td><code class="green">O(1)</code></td>
-      <td><code class="green">O(1)</code></td>
-			<td><code class="yellow">O(n)</code></td>
-    </tr> 
-		<tr>
+      <td><code class="bigO poor">O(n)</code></td>
+      <td><code class="bigO poor">O(n)</code></td>
+      <td><code class="bigO good">O(1)</code></td>
+      <td><code class="bigO good">O(1)</code></td>
+      <td><code class="bigO poor">O(n)</code></td>
+      <td><code class="bigO poor">O(n)</code></td>
+      <td><code class="bigO good">O(1)</code></td>
+      <td><code class="bigO good">O(1)</code></td>
+      <td><code class="bigO fair">O(n)</code></td>
+    </tr>
+    <tr>
       <td><a href="http://en.wikipedia.org/wiki/Doubly_linked_list">Doubly-Linked List</a></td>
 
-      <td><code class="red">O(n)</code></td>
-      <td><code class="red">O(n)</code></td>
-      <td><code class="green">O(1)</code></td>
-      <td><code class="green">O(1)</code></td>
-			<td><code class="red">O(n)</code></td>
-      <td><code class="red">O(n)</code></td>
-      <td><code class="green">O(1)</code></td>
-      <td><code class="green">O(1)</code></td>
-			<td><code class="yellow">O(n)</code></td>
-    </tr> 
-	<tr>
+      <td><code class="bigO poor">O(n)</code></td>
+      <td><code class="bigO poor">O(n)</code></td>
+      <td><code class="bigO good">O(1)</code></td>
+      <td><code class="bigO good">O(1)</code></td>
+      <td><code class="bigO poor">O(n)</code></td>
+      <td><code class="bigO poor">O(n)</code></td>
+      <td><code class="bigO good">O(1)</code></td>
+      <td><code class="bigO good">O(1)</code></td>
+      <td><code class="bigO fair">O(n)</code></td>
+    </tr>
+  <tr>
       <td><a href="http://en.wikipedia.org/wiki/Skip_list">Skip List</a></td>
 
-		<td><code class="red">O(n)</code></td>
-      <td><code class="green">O(log(n))</code></td>
-      <td><code class="green">O(log(n))</code></td>
-      <td><code class="green">O(log(n))</code></td>
-		<td><code class="red">O(n)</code></td>
-      <td><code class="red">O(n)</code></td>
-      <td><code class="red">O(n)</code></td>
-      <td><code class="red">O(n)</code></td>
-	  <td><code class="red">O(n log(n))</code></td>
-    </tr> 
+    <td><code class="bigO poor">O(n)</code></td>
+      <td><code class="bigO good">O(log(n))</code></td>
+      <td><code class="bigO good">O(log(n))</code></td>
+      <td><code class="bigO good">O(log(n))</code></td>
+    <td><code class="bigO poor">O(n)</code></td>
+      <td><code class="bigO poor">O(n)</code></td>
+      <td><code class="bigO poor">O(n)</code></td>
+      <td><code class="bigO poor">O(n)</code></td>
+    <td><code class="bigO poor">O(n log(n))</code></td>
+    </tr>
     <tr>
       <td><a href="http://en.wikipedia.org/wiki/Hash_table">Hash Table</a></td>
       <td><code>-</code></td>
-      <td><code class="green">O(1)</code></td>
-      <td><code class="green">O(1)</code></td>
-      <td><code class="green">O(1)</code></td>
-			<td><code>-</code></td>
-      <td><code class="red">O(n)</code></td>
-      <td><code class="red">O(n)</code></td>
-      <td><code class="red">O(n)</code></td>
-			<td><code class="yellow">O(n)</code></td>
+      <td><code class="bigO good">O(1)</code></td>
+      <td><code class="bigO good">O(1)</code></td>
+      <td><code class="bigO good">O(1)</code></td>
+      <td><code>-</code></td>
+      <td><code class="bigO poor">O(n)</code></td>
+      <td><code class="bigO poor">O(n)</code></td>
+      <td><code class="bigO poor">O(n)</code></td>
+      <td><code class="bigO fair">O(n)</code></td>
     </tr>
-		<tr>
+    <tr>
       <td><a href="http://en.wikipedia.org/wiki/Binary_search_tree">Binary Search Tree</a></td>
       <td><code>-</code></td>
-      <td><code class="green">O(log(n))</code></td>
-      <td><code class="green">O(log(n))</code></td>
-      <td><code class="green">O(log(n))</code></td>
-			<td><code>-</code></td>
-      <td><code class="red">O(n)</code></td>
-      <td><code class="red">O(n)</code></td>
-      <td><code class="red">O(n)</code></td>
-			<td><code class="yellow">O(n)</code></td>
+      <td><code class="bigO good">O(log(n))</code></td>
+      <td><code class="bigO good">O(log(n))</code></td>
+      <td><code class="bigO good">O(log(n))</code></td>
+      <td><code>-</code></td>
+      <td><code class="bigO poor">O(n)</code></td>
+      <td><code class="bigO poor">O(n)</code></td>
+      <td><code class="bigO poor">O(n)</code></td>
+      <td><code class="bigO fair">O(n)</code></td>
     </tr>
-		<tr>
+    <tr>
       <td><a href="http://en.wikipedia.org/wiki/B_tree">B-Tree</a></td>
       <td><code>-</code></td>
-      <td><code class="green">O(log(n))</code></td>
-      <td><code class="green">O(log(n))</code></td>
-      <td><code class="green">O(log(n))</code></td>
-			<td><code>-</code></td>
-      <td><code class="green">O(log(n))</code></td>
-      <td><code class="green">O(log(n))</code></td>
-      <td><code class="green">O(log(n))</code></td>
-			<td><code class="yellow">O(n)</code></td>
+      <td><code class="bigO good">O(log(n))</code></td>
+      <td><code class="bigO good">O(log(n))</code></td>
+      <td><code class="bigO good">O(log(n))</code></td>
+      <td><code>-</code></td>
+      <td><code class="bigO good">O(log(n))</code></td>
+      <td><code class="bigO good">O(log(n))</code></td>
+      <td><code class="bigO good">O(log(n))</code></td>
+      <td><code class="bigO fair">O(n)</code></td>
     </tr>
-		<tr>
+    <tr>
       <td><a href="http://en.wikipedia.org/wiki/Red-black_tree">Red-Black Tree</a></td>
       <td><code>-</code></td>
-      <td><code class="green">O(log(n))</code></td>
-      <td><code class="green">O(log(n))</code></td>
-      <td><code class="green">O(log(n))</code></td>
-			<td><code>-</code></td>
-      <td><code class="green">O(log(n))</code></td>
-      <td><code class="green">O(log(n))</code></td>
-      <td><code class="green">O(log(n))</code></td>
-			<td><code class="yellow">O(n)</code></td>
+      <td><code class="bigO good">O(log(n))</code></td>
+      <td><code class="bigO good">O(log(n))</code></td>
+      <td><code class="bigO good">O(log(n))</code></td>
+      <td><code>-</code></td>
+      <td><code class="bigO good">O(log(n))</code></td>
+      <td><code class="bigO good">O(log(n))</code></td>
+      <td><code class="bigO good">O(log(n))</code></td>
+      <td><code class="bigO fair">O(n)</code></td>
     </tr>
-		<tr>
+    <tr>
       <td><a href="http://en.wikipedia.org/wiki/AVL_tree">AVL Tree</a></td>
       <td><code>-</code></td>
-      <td><code class="green">O(log(n))</code></td>
-      <td><code class="green">O(log(n))</code></td>
-      <td><code class="green">O(log(n))</code></td>
-			<td><code>-</code></td>
-      <td><code class="green">O(log(n))</code></td>
-      <td><code class="green">O(log(n))</code></td>
-      <td><code class="green">O(log(n))</code></td>
-			<td><code class="yellow">O(n)</code></td>
+      <td><code class="bigO good">O(log(n))</code></td>
+      <td><code class="bigO good">O(log(n))</code></td>
+      <td><code class="bigO good">O(log(n))</code></td>
+      <td><code>-</code></td>
+      <td><code class="bigO good">O(log(n))</code></td>
+      <td><code class="bigO good">O(log(n))</code></td>
+      <td><code class="bigO good">O(log(n))</code></td>
+      <td><code class="bigO fair">O(n)</code></td>
     </tr>
   </tbody>
 </table>
 
 <h2 id="heaps">Heaps</h2>
-<table class="table table-bordered table-striped">
+<table class="table table-bordered">
     <thead>
         <tr>
             <th>Heaps</th>
@@ -333,12 +333,12 @@
         <tr>
             <th></th>
             <th>Heapify</th>
-            <th>Find Max</th>  
-            <th>Extract Max</th>  
+            <th>Find Max</th>
+            <th>Extract Max</th>
             <th>Increase Key</th>
             <th>Insert</th>
             <th>Delete</th>
-            <th>Merge</th>  
+            <th>Merge</th>
             <th></th>
         </tr>
     </thead>
@@ -346,139 +346,139 @@
         <tr>
             <td><a href="http://en.wikipedia.org/wiki/Linked_list">Linked List (sorted)</a></td>
             <td><code>-</code></td> <!-- heapify -->
-            <td><code class="green">O(1)</code></td> <!-- Find max -->
-            <td><code class="green">O(1)</code></td> <!-- Extract max -->
-            <td><code class="red">O(n)</code></td> <!-- Increase -->
-            <td><code class="red">O(n)</code></td> <!-- insert -->
-            <td><code class="green">O(1)</code></td> <!-- delete -->
-            <td><code class="red">O(m+n)</code></td> <!-- merge -->
+            <td><code class="bigO good">O(1)</code></td> <!-- Find max -->
+            <td><code class="bigO good">O(1)</code></td> <!-- Extract max -->
+            <td><code class="bigO poor">O(n)</code></td> <!-- Increase -->
+            <td><code class="bigO poor">O(n)</code></td> <!-- insert -->
+            <td><code class="bigO good">O(1)</code></td> <!-- delete -->
+            <td><code class="bigO poor">O(m+n)</code></td> <!-- merge -->
         </tr>
         <tr>
             <td><a href="http://en.wikipedia.org/wiki/Linked_list">Linked List (unsorted)</a></td>
             <td><code>-</code></td> <!-- heapify -->
-            <td><code class="red">O(n)</code></td> <!-- Find max -->
-            <td><code class="red">O(n)</code></td> <!-- Extract max -->
-            <td><code class="green">O(1)</code></td> <!-- Increase -->
-            <td><code class="green">O(1)</code></td> <!-- insert -->
-            <td><code class="green">O(1)</code></td> <!-- delete -->
-            <td><code class="green">O(1)</code></td> <!-- merge -->
+            <td><code class="bigO poor">O(n)</code></td> <!-- Find max -->
+            <td><code class="bigO poor">O(n)</code></td> <!-- Extract max -->
+            <td><code class="bigO good">O(1)</code></td> <!-- Increase -->
+            <td><code class="bigO good">O(1)</code></td> <!-- insert -->
+            <td><code class="bigO good">O(1)</code></td> <!-- delete -->
+            <td><code class="bigO good">O(1)</code></td> <!-- merge -->
         </tr>
         <tr>
             <td><a href="http://en.wikipedia.org/wiki/Binary_heap">Binary Heap</a></td>
-            <td><code class="yellow">O(log(n))</code></td>
-            <td><code class="green">O(1)</code></td>
-            <td><code class="yellow">O(log(n))</code></td>
-            <td><code class="yellow">O(log(n))</code></td>
-            <td><code class="yellow">O(log(n))</code></td>
-            <td><code class="yellow">O(log(n))</code></td>
-            <td><code class="red">O(m+n)</code></td>
+            <td><code class="bigO fair">O(log(n))</code></td>
+            <td><code class="bigO good">O(1)</code></td>
+            <td><code class="bigO fair">O(log(n))</code></td>
+            <td><code class="bigO fair">O(log(n))</code></td>
+            <td><code class="bigO fair">O(log(n))</code></td>
+            <td><code class="bigO fair">O(log(n))</code></td>
+            <td><code class="bigO poor">O(m+n)</code></td>
         </tr>
         <tr>
             <td><a href="http://en.wikipedia.org/wiki/Binomial_heap">Binomial Heap</a></td>
             <td><code>-</code></td>
-            <td><code class="yellow">O(log(n))</code></td>
-            <td><code class="yellow">O(log(n))</code></td>
-            <td><code class="yellow">O(log(n))</code></td>
-            <td><code class="yellow">O(log(n))</code></td>
-            <td><code class="yellow">O(log(n))</code></td>
-            <td><code class="yellow">O(log(n))</code></td>
+            <td><code class="bigO fair">O(log(n))</code></td>
+            <td><code class="bigO fair">O(log(n))</code></td>
+            <td><code class="bigO fair">O(log(n))</code></td>
+            <td><code class="bigO fair">O(log(n))</code></td>
+            <td><code class="bigO fair">O(log(n))</code></td>
+            <td><code class="bigO fair">O(log(n))</code></td>
         </tr>
         <tr>
             <td><a href="http://en.wikipedia.org/wiki/Fibonacci_heap">Fibonacci Heap</a></td>
             <td><code>-</code></td>
-            <td><code class="green">O(1)</code></td>
-            <td><code rel="tooltip" title="Amortized" class="yellow">O(log(n))*</code></td>
-            <td><code rel="tooltip" title="Amortized" class="green">O(1)*</code></td>
-            <td><code class="green">O(1)</code></td>
-            <td><code rel="tooltip" title="Amortized" class="yellow">O(log(n))*</code></td>
-            <td><code class="green">O(1)</code></td>
+            <td><code class="bigO good">O(1)</code></td>
+            <td><code rel="tooltip" title="Amortized" class="bigO fair">O(log(n))*</code></td>
+            <td><code rel="tooltip" title="Amortized" class="bigO good">O(1)*</code></td>
+            <td><code class="bigO good">O(1)</code></td>
+            <td><code rel="tooltip" title="Amortized" class="bigO fair">O(log(n))*</code></td>
+            <td><code class="bigO good">O(1)</code></td>
         </tr>
         </tbody>
     </table>
 
 <h2 id="graphs">Graphs</h2>
-<table class="table table-bordered table-striped">
-	<tbody>
-		<tr>
-			<th>Node / Edge Management</th>
-			<th>Storage</th>
-			<th>Add Vertex</th>
-			<th>Add Edge</th>
-			<th>Remove Vertex</th>
-			<th>Remove Edge</th>
-			<th>Query</th>
-		</tr>
-		<tr>
-			<td><a href="http://en.wikipedia.org/wiki/Adjacency_list">Adjacency list</a></td>
-			<td><code class="yellow">O(|V|+|E|)</code></td>
-			<td><code class="green">O(1)</code></td>
-			<td><code class="green">O(1)</code></td>
-			<td><code class="yellow">O(|V| + |E|)</code></td>
-			<td><code class="yellow">O(|E|)</code></td>
-			<td><code class="yellow">O(|V|)</code></td>
-		</tr>
-		<tr>
-			<td><a href="http://en.wikipedia.org/wiki/Incidence_list">Incidence list</a></td>
-			<td><code class="yellow">O(|V|+|E|)</code></td>
-			<td><code class="green">O(1)</code></td>
-			<td><code class="green">O(1)</code></td>
-			<td><code class="yellow">O(|E|)</code></td>
-			<td><code class="yellow">O(|E|)</code></td>
-			<td><code class="yellow">O(|E|)</code></td>
-		</tr>
-		<tr>
-			<td><a href="http://en.wikipedia.org/wiki/Adjacency_matrix">Adjacency matrix</a></td>
-			<td><code class="red">O(|V|^2)</code></td>
-			<td><code class="red">O(|V|^2)</code></td>
-			<td><code class="green">O(1)</code></td>
-			<td><code class="red">O(|V|^2)</code></td>
-			<td><code class="green">O(1)</code></td>
-			<td><code class="green">O(1)</code></td>
-		</tr>
-		<tr>
-			<td><a href="http://en.wikipedia.org/wiki/Incidence_matrix">Incidence matrix</a></td>
-			<td><code class="red">O(|V| &sdot; |E|)</code></td>
-			<td><code class="red">O(|V| &sdot; |E|)</code></td>
-			<td><code class="red">O(|V| &sdot; |E|)</code></td>
-			<td><code class="red">O(|V| &sdot; |E|)</code></td>
-			<td><code class="red">O(|V| &sdot; |E|)</code></td>
-			<td><code class="yellow">O(|E|)</code></td>
-		</tr>
-	</tbody>
+<table class="table table-bordered">
+  <tbody>
+    <tr>
+      <th>Node / Edge Management</th>
+      <th>Storage</th>
+      <th>Add Vertex</th>
+      <th>Add Edge</th>
+      <th>Remove Vertex</th>
+      <th>Remove Edge</th>
+      <th>Query</th>
+    </tr>
+    <tr>
+      <td><a href="http://en.wikipedia.org/wiki/Adjacency_list">Adjacency list</a></td>
+      <td><code class="bigO fair">O(|V|+|E|)</code></td>
+      <td><code class="bigO good">O(1)</code></td>
+      <td><code class="bigO good">O(1)</code></td>
+      <td><code class="bigO fair">O(|V| + |E|)</code></td>
+      <td><code class="bigO fair">O(|E|)</code></td>
+      <td><code class="bigO fair">O(|V|)</code></td>
+    </tr>
+    <tr>
+      <td><a href="http://en.wikipedia.org/wiki/Incidence_list">Incidence list</a></td>
+      <td><code class="bigO fair">O(|V|+|E|)</code></td>
+      <td><code class="bigO good">O(1)</code></td>
+      <td><code class="bigO good">O(1)</code></td>
+      <td><code class="bigO fair">O(|E|)</code></td>
+      <td><code class="bigO fair">O(|E|)</code></td>
+      <td><code class="bigO fair">O(|E|)</code></td>
+    </tr>
+    <tr>
+      <td><a href="http://en.wikipedia.org/wiki/Adjacency_matrix">Adjacency matrix</a></td>
+      <td><code class="bigO poor">O(|V|^2)</code></td>
+      <td><code class="bigO poor">O(|V|^2)</code></td>
+      <td><code class="bigO good">O(1)</code></td>
+      <td><code class="bigO poor">O(|V|^2)</code></td>
+      <td><code class="bigO good">O(1)</code></td>
+      <td><code class="bigO good">O(1)</code></td>
+    </tr>
+    <tr>
+      <td><a href="http://en.wikipedia.org/wiki/Incidence_matrix">Incidence matrix</a></td>
+      <td><code class="bigO poor">O(|V| &sdot; |E|)</code></td>
+      <td><code class="bigO poor">O(|V| &sdot; |E|)</code></td>
+      <td><code class="bigO poor">O(|V| &sdot; |E|)</code></td>
+      <td><code class="bigO poor">O(|V| &sdot; |E|)</code></td>
+      <td><code class="bigO poor">O(|V| &sdot; |E|)</code></td>
+      <td><code class="bigO fair">O(|E|)</code></td>
+    </tr>
+  </tbody>
 </table>
 
 <h2 id="growth">Notation for asymptotic growth</h2>
-<table class="table table-bordered table-striped">
-	<tr>
-		<th>letter</th>
-		<th>bound</th> 	
-		<th>growth</th>
-	</tr>
-	<tr>
-		<td>(theta) &#920;</td>
-		<td>upper and lower, tight<a href="#footnote-1"><sup>[1]</sup></a></td>
-		<td>equal<a href="#footnote-1"><sup>[2]</sup></a></td>
-	</tr>
-	<tr>
-		<td>(big-oh) O</td>
-		<td>upper, tightness unknown</td>
-		<td>less than or equal<a href="#footnote-1"><sup>[3]</sup></a></td>
-	</tr>
-	<tr>
-		<td>(small-oh) o</td>
-		<td>upper, not tight</td>
-		<td>less than</td>
-	</tr>
-	<tr>
-		<td>(big omega) &#937;</td>
-		<td>lower, tightness unknown</td>
-		<td>greater than or equal</td>
-	</tr>
-	<tr>
-		<td>(small omega) &#969;</td>
-		<td>lower, not tight</td>
-		<td>greater than</td>
-	</tr>	
+<table class="table table-bordered">
+  <tr>
+    <th>letter</th>
+    <th>bound</th>
+    <th>growth</th>
+  </tr>
+  <tr>
+    <td>(theta) &#920;</td>
+    <td>upper and lower, tight<a href="#footnote-1"><sup>[1]</sup></a></td>
+    <td>equal<a href="#footnote-1"><sup>[2]</sup></a></td>
+  </tr>
+  <tr>
+    <td>(big-oh) O</td>
+    <td>upper, tightness unknown</td>
+    <td>less than or equal<a href="#footnote-1"><sup>[3]</sup></a></td>
+  </tr>
+  <tr>
+    <td>(small-oh) o</td>
+    <td>upper, not tight</td>
+    <td>less than</td>
+  </tr>
+  <tr>
+    <td>(big omega) &#937;</td>
+    <td>lower, tightness unknown</td>
+    <td>greater than or equal</td>
+  </tr>
+  <tr>
+    <td>(small omega) &#969;</td>
+    <td>lower, not tight</td>
+    <td>greater than</td>
+  </tr>
 </table>
 
 <p id="footnote-1">[1] Big O is the upper bound, while Omega is the lower bound. Theta requires both Big O and Omega, so that's why it's referred to as a tight bound (it must be both the upper and lower bound). For example, an algorithm taking Omega(n log n) takes at least n log n time but has no upper limit. An algorithm taking Theta(n log n) is far preferential since it takes AT LEAST n log n (Omega n log n) and NO MORE THAN n log n (Big O n log n).<sup><a href="http://stackoverflow.com/a/464081/412916">SO</a></sup></p>
@@ -486,30 +486,30 @@
 <p id="footnote-1">[3] Same thing. Here the growth rate is no faster than g(n). big-oh is the most useful because represents the worst-case behavior.</p>
 
 
-In short, if algorithm is __ then its performance is __ 
-<table class="table table-bordered table-striped">
-	<tr>
-		<th>algorithm</th>
-		<th>performance</th> 	
-	</tr>
-	<tr>
-		<td>o(n)</td>
-		<td>&lt; n</td>
-	</tr>
-	<tr>
-		<td>O(n)</td>
-		<td>&#8804; n</td>
-	</tr>
-	<tr>
-		<td>&#920;(n)</td>
-		<td>= n</td>
-	</tr>
-	<tr>
-		<td>&#937;(n)</td>
-		<td>&#8805; n</td>
-	</tr>
-	<tr>
-		<td>&#969;(n)</td>
-		<td>&gt; n</td>
-	</tr>	
+In short, if algorithm is __ then its performance is __
+<table class="table table-bordered">
+  <tr>
+    <th>algorithm</th>
+    <th>performance</th>
+  </tr>
+  <tr>
+    <td>o(n)</td>
+    <td>&lt; n</td>
+  </tr>
+  <tr>
+    <td>O(n)</td>
+    <td>&#8804; n</td>
+  </tr>
+  <tr>
+    <td>&#920;(n)</td>
+    <td>= n</td>
+  </tr>
+  <tr>
+    <td>&#937;(n)</td>
+    <td>&#8805; n</td>
+  </tr>
+  <tr>
+    <td>&#969;(n)</td>
+    <td>&gt; n</td>
+  </tr>
 </table>
