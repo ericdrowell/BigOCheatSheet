@@ -1,0 +1,78 @@
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #333333;
+}
+
+a {
+    color: #0088cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+code {
+    font-family: Monaco,Menlo,Consolas,"Courier New",monospace;
+    color: #dd1144;
+    font-size: 0.8em;
+}
+
+.bigO {
+    border-style: solid;
+    border-width: 1px;
+    padding: 0.2em;
+    border-radius: 0.5em;
+}
+
+.good { /* green */
+    border-color: #286500;
+    color: #286500;
+    background-color: #53d000;
+}
+
+.fair { /* yellow */
+    border-color: #6f6e00;
+    color: #6f6e00;
+    background-color: yellow;
+}
+
+.poor { /* red */
+    border-color: #b20000;
+    color: #b20000;
+    background-color: #ff8989;
+}
+
+.table {
+    border-collapse: collapse;
+    text-align: left;
+}
+
+@media print {
+    .table {
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    #heaps {
+        page-break-before: always;
+    }
+}
+
+.table th, .table td {
+    padding: 0.8em;
+    margin: 0px;
+}
+
+.table-bordered th, .table-bordered td {
+    border: thin solid #dddddd;
+}
+
+.table-bordered th {
+    vertical-align: bottom;
+}
+
+.table-bordered td {
+    vertical-align: middle;
+}
+
