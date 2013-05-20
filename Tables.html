@@ -143,7 +143,7 @@
       <td><code class="red">O(n^2)</code></td>
       <td><code class="green">O(1)</code></td>
     </tr>
-	<tr>
+    <tr>
       <td><a href="http://en.wikipedia.org/wiki/Selection_sort">Select Sort</a></td>
       <td>Array</td>
       <td><code class="red">O(n^2)</code></td>
@@ -167,6 +167,14 @@
       <td><code class="green">O(nk)</code></td>
       <td><code class="yellow">O(n+k)</code></td>
     </tr>
+    <tr>
+      <td><a rel="tooltip" title="Constant number of digits 'k'" href="http://en.wikipedia.org/wiki/Shellsort">Shellsort</a></td>
+      <td>Array</td>
+      <td><code class="green">O(n)</code></td>
+      <td><code class="yellow">O((n log(n))^2)</code></td>
+      <td><code class="yellow">O((n log(n))^2)</code></td>
+      <td><code class="green">O(1)</code></td>
+    </tr>
   </tbody>
 </table>
 
@@ -186,16 +194,16 @@
     </tr>
     <tr>
       <th></th>
-			<th>Indexing</th>
-			<th>Search</th>
+      <th>Indexing</th>
+      <th>Search</th>
       <th>Insertion</th>  
       <th>Deletion</th>  
-			<th>Indexing</th>
-			<th>Search</th>
+      <th>Indexing</th>
+      <th>Search</th>
       <th>Insertion</th>  
       <th>Deletion</th>  
-    	<th></th>
-		</tr>
+      <th></th>
+    </tr>
   </thead>
   <tbody>
     <tr>
@@ -204,11 +212,11 @@
       <td><code class="red">O(n)</code></td>
       <td><code>-</code></td>
       <td><code>-</code></td>
-			<td><code class="green">O(1)</code></td>
+      <td><code class="green">O(1)</code></td>
       <td><code class="red">O(n)</code></td>
-			<td><code>-</code></td>
       <td><code>-</code></td>
-			<td><code class="yellow">O(n)</code></td>
+      <td><code>-</code></td>
+      <td><code class="yellow">O(n)</code></td>
     </tr>
     <tr>
       <td><a href="http://en.wikipedia.org/wiki/Dynamic_array">Dynamic Array</a></td>
@@ -216,49 +224,49 @@
       <td><code class="red">O(n)</code></td>
       <td><code class="red">O(n)</code></td>
       <td><code>-</code></td>
-			<td><code class="green">O(1)</code></td>
+      <td><code class="green">O(1)</code></td>
       <td><code class="red">O(n)</code></td>
       <td><code class="red">O(n)</code></td>
       <td><code>-</code></td>
-			<td><code class="yellow">O(n)</code></td>
+      <td><code class="yellow">O(n)</code></td>
     </tr>
-		<tr>
+    <tr>
       <td><a href="http://en.wikipedia.org/wiki/Singly_linked_list#Singly_linked_lists">Singly-Linked List</a></td>
       <td><code class="red">O(n)</code></td>
       <td><code class="red">O(n)</code></td>
       <td><code class="green">O(1)</code></td>
       <td><code class="green">O(1)</code></td>
-			<td><code class="red">O(n)</code></td>
+      <td><code class="red">O(n)</code></td>
       <td><code class="red">O(n)</code></td>
       <td><code class="green">O(1)</code></td>
       <td><code class="green">O(1)</code></td>
-			<td><code class="yellow">O(n)</code></td>
+      <td><code class="yellow">O(n)</code></td>
     </tr> 
-		<tr>
+    <tr>
       <td><a href="http://en.wikipedia.org/wiki/Doubly_linked_list">Doubly-Linked List</a></td>
 
       <td><code class="red">O(n)</code></td>
       <td><code class="red">O(n)</code></td>
       <td><code class="green">O(1)</code></td>
       <td><code class="green">O(1)</code></td>
-			<td><code class="red">O(n)</code></td>
+      <td><code class="red">O(n)</code></td>
       <td><code class="red">O(n)</code></td>
       <td><code class="green">O(1)</code></td>
       <td><code class="green">O(1)</code></td>
-			<td><code class="yellow">O(n)</code></td>
+      <td><code class="yellow">O(n)</code></td>
     </tr> 
-	<tr>
+    <tr>
       <td><a href="http://en.wikipedia.org/wiki/Skip_list">Skip List</a></td>
 
-		<td><code class="red">O(n)</code></td>
+      <td><code class="red">O(n)</code></td>
       <td><code class="green">O(log(n))</code></td>
       <td><code class="green">O(log(n))</code></td>
       <td><code class="green">O(log(n))</code></td>
-		<td><code class="red">O(n)</code></td>
       <td><code class="red">O(n)</code></td>
       <td><code class="red">O(n)</code></td>
       <td><code class="red">O(n)</code></td>
-	  <td><code class="red">O(n log(n))</code></td>
+      <td><code class="red">O(n)</code></td>
+      <td><code class="red">O(n log(n))</code></td>
     </tr> 
     <tr>
       <td><a href="http://en.wikipedia.org/wiki/Hash_table">Hash Table</a></td>
@@ -266,135 +274,135 @@
       <td><code class="green">O(1)</code></td>
       <td><code class="green">O(1)</code></td>
       <td><code class="green">O(1)</code></td>
-			<td><code>-</code></td>
+      <td><code>-</code></td>
       <td><code class="red">O(n)</code></td>
       <td><code class="red">O(n)</code></td>
       <td><code class="red">O(n)</code></td>
-			<td><code class="yellow">O(n)</code></td>
+      <td><code class="yellow">O(n)</code></td>
     </tr>
-		<tr>
+    <tr>
       <td><a href="http://en.wikipedia.org/wiki/Binary_search_tree">Binary Search Tree</a></td>
       <td><code>-</code></td>
       <td><code class="green">O(log(n))</code></td>
       <td><code class="green">O(log(n))</code></td>
       <td><code class="green">O(log(n))</code></td>
-			<td><code>-</code></td>
+      <td><code>-</code></td>
       <td><code class="red">O(n)</code></td>
       <td><code class="red">O(n)</code></td>
       <td><code class="red">O(n)</code></td>
-			<td><code class="yellow">O(n)</code></td>
+      <td><code class="yellow">O(n)</code></td>
     </tr>
-		<tr>
+    <tr>
       <td><a href="http://en.wikipedia.org/wiki/B_tree">B-Tree</a></td>
       <td><code>-</code></td>
       <td><code class="green">O(log(n))</code></td>
       <td><code class="green">O(log(n))</code></td>
       <td><code class="green">O(log(n))</code></td>
-			<td><code>-</code></td>
+      <td><code>-</code></td>
       <td><code class="green">O(log(n))</code></td>
       <td><code class="green">O(log(n))</code></td>
       <td><code class="green">O(log(n))</code></td>
-			<td><code class="yellow">O(n)</code></td>
+      <td><code class="yellow">O(n)</code></td>
     </tr>
-		<tr>
+    <tr>
       <td><a href="http://en.wikipedia.org/wiki/Red-black_tree">Red-Black Tree</a></td>
       <td><code>-</code></td>
       <td><code class="green">O(log(n))</code></td>
       <td><code class="green">O(log(n))</code></td>
       <td><code class="green">O(log(n))</code></td>
-			<td><code>-</code></td>
+      <td><code>-</code></td>
       <td><code class="green">O(log(n))</code></td>
       <td><code class="green">O(log(n))</code></td>
       <td><code class="green">O(log(n))</code></td>
-			<td><code class="yellow">O(n)</code></td>
+      <td><code class="yellow">O(n)</code></td>
     </tr>
-		<tr>
+    <tr>
       <td><a href="http://en.wikipedia.org/wiki/AVL_tree">AVL Tree</a></td>
       <td><code>-</code></td>
       <td><code class="green">O(log(n))</code></td>
       <td><code class="green">O(log(n))</code></td>
       <td><code class="green">O(log(n))</code></td>
-			<td><code>-</code></td>
+      <td><code>-</code></td>
       <td><code class="green">O(log(n))</code></td>
       <td><code class="green">O(log(n))</code></td>
       <td><code class="green">O(log(n))</code></td>
-			<td><code class="yellow">O(n)</code></td>
+      <td><code class="yellow">O(n)</code></td>
     </tr>
   </tbody>
 </table>
 
 <h2 id="heaps">Heaps</h2>
 <table class="table table-bordered table-striped">
-    <thead>
-        <tr>
-            <th>Heaps</th>
-            <th colspan="7">Time Complexity</th>
-        </tr>
-        <tr>
-            <th></th>
-            <th>Heapify</th>
-            <th>Find Max</th>  
-            <th>Extract Max</th>  
-            <th>Increase Key</th>
-            <th>Insert</th>
-            <th>Delete</th>
-            <th>Merge</th>  
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><a href="http://en.wikipedia.org/wiki/Linked_list">Linked List (sorted)</a></td>
-            <td><code>-</code></td> <!-- heapify -->
-            <td><code class="green">O(1)</code></td> <!-- Find max -->
-            <td><code class="green">O(1)</code></td> <!-- Extract max -->
-            <td><code class="red">O(n)</code></td> <!-- Increase -->
-            <td><code class="red">O(n)</code></td> <!-- insert -->
-            <td><code class="green">O(1)</code></td> <!-- delete -->
-            <td><code class="red">O(m+n)</code></td> <!-- merge -->
-        </tr>
-        <tr>
-            <td><a href="http://en.wikipedia.org/wiki/Linked_list">Linked List (unsorted)</a></td>
-            <td><code>-</code></td> <!-- heapify -->
-            <td><code class="red">O(n)</code></td> <!-- Find max -->
-            <td><code class="red">O(n)</code></td> <!-- Extract max -->
-            <td><code class="green">O(1)</code></td> <!-- Increase -->
-            <td><code class="green">O(1)</code></td> <!-- insert -->
-            <td><code class="green">O(1)</code></td> <!-- delete -->
-            <td><code class="green">O(1)</code></td> <!-- merge -->
-        </tr>
-        <tr>
-            <td><a href="http://en.wikipedia.org/wiki/Binary_heap">Binary Heap</a></td>
-            <td><code class="yellow">O(log(n))</code></td>
-            <td><code class="green">O(1)</code></td>
-            <td><code class="yellow">O(log(n))</code></td>
-            <td><code class="yellow">O(log(n))</code></td>
-            <td><code class="yellow">O(log(n))</code></td>
-            <td><code class="yellow">O(log(n))</code></td>
-            <td><code class="red">O(m+n)</code></td>
-        </tr>
-        <tr>
-            <td><a href="http://en.wikipedia.org/wiki/Binomial_heap">Binomial Heap</a></td>
-            <td><code>-</code></td>
-            <td><code class="yellow">O(log(n))</code></td>
-            <td><code class="yellow">O(log(n))</code></td>
-            <td><code class="yellow">O(log(n))</code></td>
-            <td><code class="yellow">O(log(n))</code></td>
-            <td><code class="yellow">O(log(n))</code></td>
-            <td><code class="yellow">O(log(n))</code></td>
-        </tr>
-        <tr>
-            <td><a href="http://en.wikipedia.org/wiki/Fibonacci_heap">Fibonacci Heap</a></td>
-            <td><code>-</code></td>
-            <td><code class="green">O(1)</code></td>
-            <td><code rel="tooltip" title="Amortized" class="yellow">O(log(n))*</code></td>
-            <td><code rel="tooltip" title="Amortized" class="green">O(1)*</code></td>
-            <td><code class="green">O(1)</code></td>
-            <td><code rel="tooltip" title="Amortized" class="yellow">O(log(n))*</code></td>
-            <td><code class="green">O(1)</code></td>
-        </tr>
-        </tbody>
-    </table>
+  <thead>
+    <tr>
+      <th>Heaps</th>
+      <th colspan="7">Time Complexity</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Heapify</th>
+      <th>Find Max</th>  
+      <th>Extract Max</th>  
+      <th>Increase Key</th>
+      <th>Insert</th>
+      <th>Delete</th>
+      <th>Merge</th>  
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="http://en.wikipedia.org/wiki/Linked_list">Linked List (sorted)</a></td>
+      <td><code>-</code></td> <!-- heapify -->
+      <td><code class="green">O(1)</code></td> <!-- Find max -->
+      <td><code class="green">O(1)</code></td> <!-- Extract max -->
+      <td><code class="red">O(n)</code></td> <!-- Increase -->
+      <td><code class="red">O(n)</code></td> <!-- insert -->
+      <td><code class="green">O(1)</code></td> <!-- delete -->
+      <td><code class="red">O(m+n)</code></td> <!-- merge -->
+    </tr>
+    <tr>
+      <td><a href="http://en.wikipedia.org/wiki/Linked_list">Linked List (unsorted)</a></td>
+      <td><code>-</code></td> <!-- heapify -->
+      <td><code class="red">O(n)</code></td> <!-- Find max -->
+      <td><code class="red">O(n)</code></td> <!-- Extract max -->
+      <td><code class="green">O(1)</code></td> <!-- Increase -->
+      <td><code class="green">O(1)</code></td> <!-- insert -->
+      <td><code class="green">O(1)</code></td> <!-- delete -->
+      <td><code class="green">O(1)</code></td> <!-- merge -->
+    </tr>
+    <tr>
+      <td><a href="http://en.wikipedia.org/wiki/Binary_heap">Binary Heap</a></td>
+      <td><code class="yellow">O(log(n))</code></td>
+      <td><code class="green">O(1)</code></td>
+      <td><code class="yellow">O(log(n))</code></td>
+      <td><code class="yellow">O(log(n))</code></td>
+      <td><code class="yellow">O(log(n))</code></td>
+      <td><code class="yellow">O(log(n))</code></td>
+      <td><code class="red">O(m+n)</code></td>
+    </tr>
+    <tr>
+      <td><a href="http://en.wikipedia.org/wiki/Binomial_heap">Binomial Heap</a></td>
+      <td><code>-</code></td>
+      <td><code class="yellow">O(log(n))</code></td>
+      <td><code class="yellow">O(log(n))</code></td>
+      <td><code class="yellow">O(log(n))</code></td>
+      <td><code class="yellow">O(log(n))</code></td>
+      <td><code class="yellow">O(log(n))</code></td>
+      <td><code class="yellow">O(log(n))</code></td>
+    </tr>
+    <tr>
+      <td><a href="http://en.wikipedia.org/wiki/Fibonacci_heap">Fibonacci Heap</a></td>
+      <td><code>-</code></td>
+      <td><code class="green">O(1)</code></td>
+      <td><code rel="tooltip" title="Amortized" class="yellow">O(log(n))*</code></td>
+      <td><code rel="tooltip" title="Amortized" class="green">O(1)*</code></td>
+      <td><code class="green">O(1)</code></td>
+      <td><code rel="tooltip" title="Amortized" class="yellow">O(log(n))*</code></td>
+      <td><code class="green">O(1)</code></td>
+    </tr>
+  </tbody>
+</table>
 
 <h2 id="graphs">Graphs</h2>
 <table class="table table-bordered table-striped">
