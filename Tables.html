@@ -365,6 +365,16 @@
       <td><code class="red">O(m+n)</code></td>
     </tr>
     <tr>
+      <td><a href="http://en.wikipedia.org/wiki/Pairing_heap">Pairing Heap</a></td>
+      <td><code class="yellow">O(n)</code></td> <!-- heapify -->
+      <td><code class="green">O(1)</code></td> <!-- find max -->
+      <td><code rel="tooltip" title="Amortized" class="yellow-green">O(log(n))</code></td> <!-- extract max -->
+      <td><code rel="tooltip" title="Amortized; tight bound not precisely known. See Wikipedia-article." class="yellow-green">o(log(n))</code></td> <!-- increase key -->
+      <td><code class="green">O(1)</code></td> <!-- insert -->
+      <td><code rel="tooltip" title="Amortized; increase key to infinity followed by extract max." class="yellow-green">o(log(n))</code></td> <!-- delete -->
+      <td><code class="green">O(1)</code></td> <!-- merge -->
+    </tr>
+    <tr>
       <td><a href="http://en.wikipedia.org/wiki/Binomial_heap">Binomial Heap</a></td>
       <td><code>-</code></td>
       <td><code rel="tooltip" title="With aux pointer" class="green">O(1)</code></td>
