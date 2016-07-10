@@ -314,11 +314,11 @@
   </tbody>
 </table>
 
-<h2 id="heaps">Heap Operations</h2>
+<h2 id="heaps">Priority Queue Operations</h2>
 <table class="table table-bordered table-striped">
   <thead>
     <tr>
-      <th>Type</th>
+      <th>Data Structure</th>
       <th colspan="7">Time Complexity</th>
     </tr>
     <tr>
@@ -383,6 +383,54 @@
       <td><code class="green">O(1)</code></td>
       <td><code rel="tooltip" title="Amortized" class="yellow-green">O(log(n))</code></td>
       <td><code class="green">O(1)</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="heaps">Disjoint Set Operations</h2>
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>Data Structure</th>
+      <th colspan="4">Time Complexity</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Make set</th>
+      <th>Find set</th>  
+      <th>Link</th>  
+      <th>Sequence of m operations</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="http://en.wikipedia.org/wiki/Linked_list">Circular Linked List</a></td>
+      <td><code class="green">O(1)</code></td> <!-- Makeset -->
+      <td><code class="red">O(n)</code></td> <!-- Findset -->
+      <td><code class="green">O(1)</code></td> <!-- Link -->
+      <td><code class="red">O(mn)</code></td> <!-- Seq -->
+    </tr>
+    <tr>
+      <td><a href="http://en.wikipedia.org/wiki/Linked_list">Linked List With Union By Weight</a></td>
+      <td><code class="green">O(1)</code></td> <!-- Makeset -->
+      <td><code class="green">O(1)</code></td> <!-- Findset -->
+      <td><code class="red">O(n)</code></td> <!-- Link -->
+      <td><code class="red">O(m+nlog(n))</code></td> <!-- Seq -->
+    </tr>
+    <tr>
+      <td><a href="http://en.wikipedia.org/wiki/Parent_pointer_tree">Tree With Union by Height or by Weight</a></td>
+      <td><code class="green">O(1)</code></td> <!-- Makeset -->
+      <td><code class="yellow">O(log(n))</code></td> <!-- Findset -->
+      <td><code class="green">O(1)</code></td> <!-- Link -->
+      <td><code class="orange">O(mlog(n))</code></td> <!-- Seq -->
+    </tr>
+    <tr>
+      <td><a href="http://en.wikipedia.org/wiki/Disjoint-set_data_structure#Disjoint-set_forests">Tree With Union by Weight and Path Compression</a></td>
+      <td><code class="green">O(1)</code></td> <!-- Makeset -->
+      <td><code class="yellow">O(log(n))</code></td> <!-- Findset -->
+      <td><code class="green">O(1)</code></td> <!-- Link -->
+      <td><code rel="tooltip" title="iterated logarithm (log star)" class="orange">O(mlog*(n))</code></td> <!-- Seq -->
     </tr>
   </tbody>
 </table>
