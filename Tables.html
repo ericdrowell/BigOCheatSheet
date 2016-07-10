@@ -1,4 +1,4 @@
-<h2 id="data-structures">Data Structure Operations</h2>
+<h2 id="data-structures">Common Data Structure Operations</h2>
 <table class="table table-bordered table-striped">
   <thead>
     <tr>
@@ -230,7 +230,7 @@
     </tr>
     <tr>
       <td><a href="http://en.wikipedia.org/wiki/Timsort">Timsort</a></td>
-      <td><code class="green">O(n)</code></td>
+      <td><code class="yellow">O(n)</code></td>
       <td><code class="orange">O(n log(n))</code></td>
       <td><code class="orange">O(n log(n))</code></td>
       <td><code class="yellow">O(n)</code></td>
@@ -244,14 +244,14 @@
     </tr>
     <tr>
       <td><a href="http://en.wikipedia.org/wiki/Bubble_sort">Bubble Sort</a></td>
-      <td><code class="green">O(n)</code></td>
+      <td><code class="yellow">O(n)</code></td>
       <td><code class="red">O(n^2)</code></td>
       <td><code class="red">O(n^2)</code></td>
       <td><code class="green">O(1)</code></td>
     </tr>
     <tr>
       <td><a href="http://en.wikipedia.org/wiki/Insertion_sort">Insertion Sort</a></td>
-      <td><code class="green">O(n)</code></td>
+      <td><code class="yellow">O(n)</code></td>
       <td><code class="red">O(n^2)</code></td>
       <td><code class="red">O(n^2)</code></td>
       <td><code class="green">O(1)</code></td>
@@ -272,7 +272,7 @@
     </tr>
     <tr>
       <td><a href="http://en.wikipedia.org/wiki/Shellsort">Shell Sort</a></td>
-      <td><code class="green">O(n)</code></td>
+      <td><code class="orange">O(n log(n))</code></td>
       <td><code class="red">O(n(log(n))^2)</code></td>
       <td><code class="red">O(n(log(n))^2)</code></td>
       <td><code class="green">O(1)</code></td>
@@ -300,7 +300,7 @@
     </tr>
     <tr>
       <td><a href="https://en.wikipedia.org/wiki/Cubesort">Cubesort</a></td>
-      <td><code class="green">O(n)</code></td>
+      <td><code class="yellow">O(n)</code></td>
       <td><code class="orange">O(n log(n))</code></td>
       <td><code class="orange">O(n log(n))</code></td>
       <td><code class="yellow">O(n)</code></td>
@@ -308,11 +308,11 @@
   </tbody>
 </table>
 
-<h2 id="graph-operations">Graph Storage Operations</h2>
+<h2 id="graph-operations">Graph Data Structure Operations</h2>
 <table class="table table-bordered table-striped">
   <thead>
     <tr>
-      <th>Type</th>
+      <th>Data Structure</th>
       <th colspan="7">Time Complexity</th>
     </tr>
     <tr>
@@ -361,6 +361,63 @@
       <td><code class="red">O(|V| &sdot; |E|)</code></td>
       <td><code class="red">O(|V| &sdot; |E|)</code></td>
       <td><code class="yellow">O(|E|)</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="heaps">Heap Data Structure Operations</h2>
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>Data Structure</th>
+      <th colspan="7">Time Complexity</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Find Max</th>
+      <th>Extract Max</th>
+      <th>Increase Key</th>
+      <th>Insert</th>
+      <th>Delete</th>
+      <th>Merge</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="http://en.wikipedia.org/wiki/Binary_heap">Binary Heap</a></td>
+      <td><code class="green">O(1)</code></td>
+      <td><code class="yellow-green">O(log(n))</code></td>
+      <td><code class="yellow-green">O(log(n))</code></td>
+      <td><code class="yellow-green">O(log(n))</code></td>
+      <td><code class="yellow-green">O(log(n))</code></td>
+      <td><code class="yellow">O(m+n)</code></td>
+    </tr>
+    <tr>
+      <td><a href="http://en.wikipedia.org/wiki/Pairing_heap">Pairing Heap</a></td>
+      <td><code class="green">O(1)</code></td> <!-- find max -->
+      <td><code rel="tooltip" title="Amortized" class="yellow-green">O(log(n))</code></td> <!-- extract max -->
+      <td><code rel="tooltip" title="Amortized; tight bound not precisely known. See Wikipedia-article." class="yellow-green">O(log(n))</code></td> <!-- increase key -->
+      <td><code class="green">O(1)</code></td> <!-- insert -->
+      <td><code rel="tooltip" title="Amortized; increase key to infinity followed by extract max." class="yellow-green">O(log(n))</code></td> <!-- delete -->
+      <td><code class="green">O(1)</code></td> <!-- merge -->
+    </tr>
+    <tr>
+      <td><a href="http://en.wikipedia.org/wiki/Binomial_heap">Binomial Heap</a></td>
+      <td><code rel="tooltip" title="With aux pointer" class="green">O(1)</code></td>
+      <td><code class="yellow-green">O(log(n))</code></td>
+      <td><code class="yellow-green">O(log(n))</code></td>
+      <td><code rel="tooltip" title="Amortized" class="green">O(1)</code></td>
+      <td><code class="yellow-green">O(log(n))</code></td>
+      <td><code class="yellow-green">O(log(n))</code></td>
+    </tr>
+    <tr>
+      <td><a href="http://en.wikipedia.org/wiki/Fibonacci_heap">Fibonacci Heap</a></td>
+      <td><code class="green">O(1)</code></td>
+      <td><code rel="tooltip" title="Amortized" class="yellow-green">O(log(n))</code></td>
+      <td><code rel="tooltip" title="Amortized" class="green">O(1)</code></td>
+      <td><code class="green">O(1)</code></td>
+      <td><code rel="tooltip" title="Amortized" class="yellow-green">O(log(n))</code></td>
+      <td><code class="green">O(1)</code></td>
     </tr>
   </tbody>
 </table>
@@ -416,135 +473,6 @@
       <td><code class="yellow">O(|V| + |E|)</code></td>
       <td><code class="yellow">O(|V| + |E|)</code></td>
       <td><code class="yellow">O(|V| + |E|)</code></td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="heaps">Priority Queue Operations</h2>
-<table class="table table-bordered table-striped">
-  <thead>
-    <tr>
-      <th>Data Structure</th>
-      <th colspan="7">Time Complexity</th>
-    </tr>
-    <tr>
-      <th></th>
-      <th>Heapify</th>
-      <th>Find Max</th>
-      <th>Extract Max</th>
-      <th>Increase Key</th>
-      <th>Insert</th>
-      <th>Delete</th>
-      <th>Merge</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="http://en.wikipedia.org/wiki/Linked_list">Linked List (sorted)</a></td>
-      <td><code class="gray">N/A</code></td> <!-- heapify -->
-      <td><code class="green">O(1)</code></td> <!-- Find max -->
-      <td><code class="green">O(1)</code></td> <!-- Extract max -->
-      <td><code class="red">O(n)</code></td> <!-- Increase -->
-      <td><code class="red">O(n)</code></td> <!-- insert -->
-      <td><code class="green">O(1)</code></td> <!-- delete -->
-      <td><code class="red">O(m+n)</code></td> <!-- merge -->
-    </tr>
-    <tr>
-      <td><a href="http://en.wikipedia.org/wiki/Linked_list">Linked List (unsorted)</a></td>
-      <td><code class="gray">N/A</code></td> <!-- heapify -->
-      <td><code class="red">O(n)</code></td> <!-- Find max -->
-      <td><code class="red">O(n)</code></td> <!-- Extract max -->
-      <td><code class="green">O(1)</code></td> <!-- Increase -->
-      <td><code class="green">O(1)</code></td> <!-- insert -->
-      <td><code class="green">O(1)</code></td> <!-- delete -->
-      <td><code class="green">O(1)</code></td> <!-- merge -->
-    </tr>
-    <tr>
-      <td><a href="http://en.wikipedia.org/wiki/Binary_heap">Binary Heap</a></td>
-      <td><code class="yellow">O(n)</code></td>
-      <td><code class="green">O(1)</code></td>
-      <td><code class="yellow-green">O(log(n))</code></td>
-      <td><code class="yellow-green">O(log(n))</code></td>
-      <td><code class="yellow-green">O(log(n))</code></td>
-      <td><code class="yellow-green">O(log(n))</code></td>
-      <td><code class="red">O(m+n)</code></td>
-    </tr>
-    <tr>
-      <td><a href="http://en.wikipedia.org/wiki/Pairing_heap">Pairing Heap</a></td>
-      <td><code class="yellow">O(n)</code></td> <!-- heapify -->
-      <td><code class="green">O(1)</code></td> <!-- find max -->
-      <td><code rel="tooltip" title="Amortized" class="yellow-green">O(log(n))</code></td> <!-- extract max -->
-      <td><code rel="tooltip" title="Amortized; tight bound not precisely known. See Wikipedia-article." class="yellow-green">o(log(n))</code></td> <!-- increase key -->
-      <td><code class="green">O(1)</code></td> <!-- insert -->
-      <td><code rel="tooltip" title="Amortized; increase key to infinity followed by extract max." class="yellow-green">o(log(n))</code></td> <!-- delete -->
-      <td><code class="green">O(1)</code></td> <!-- merge -->
-    </tr>
-    <tr>
-      <td><a href="http://en.wikipedia.org/wiki/Binomial_heap">Binomial Heap</a></td>
-      <td><code class="yellow">O(n)</code></td>
-      <td><code rel="tooltip" title="With aux pointer" class="green">O(1)</code></td>
-      <td><code class="yellow-green">O(log(n))</code></td>
-      <td><code class="yellow-green">O(log(n))</code></td>
-      <td><code rel="tooltip" title="Amortized" class="green">O(1)</code></td>
-      <td><code class="yellow-green">O(log(n))</code></td>
-      <td><code class="yellow-green">O(log(n))</code></td>
-    </tr>
-    <tr>
-      <td><a href="http://en.wikipedia.org/wiki/Fibonacci_heap">Fibonacci Heap</a></td>
-      <td><code class="gray">N/A</code></td>
-      <td><code class="green">O(1)</code></td>
-      <td><code rel="tooltip" title="Amortized" class="yellow-green">O(log(n))</code></td>
-      <td><code rel="tooltip" title="Amortized" class="green">O(1)</code></td>
-      <td><code class="green">O(1)</code></td>
-      <td><code rel="tooltip" title="Amortized" class="yellow-green">O(log(n))</code></td>
-      <td><code class="green">O(1)</code></td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="heaps">Disjoint Set Operations</h2>
-<table class="table table-bordered table-striped">
-  <thead>
-    <tr>
-      <th>Data Structure</th>
-      <th colspan="4">Time Complexity</th>
-    </tr>
-    <tr>
-      <th></th>
-      <th>Make set</th>
-      <th>Find set</th>  
-      <th>Link</th>  
-      <th>Sequence of m operations</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="http://en.wikipedia.org/wiki/Linked_list">Circular Linked List</a></td>
-      <td><code class="green">O(1)</code></td> <!-- Makeset -->
-      <td><code class="red">O(n)</code></td> <!-- Findset -->
-      <td><code class="green">O(1)</code></td> <!-- Link -->
-      <td><code class="red">O(mn)</code></td> <!-- Seq -->
-    </tr>
-    <tr>
-      <td><a href="http://en.wikipedia.org/wiki/Linked_list">Linked List With Union By Weight</a></td>
-      <td><code class="green">O(1)</code></td> <!-- Makeset -->
-      <td><code class="green">O(1)</code></td> <!-- Findset -->
-      <td><code class="red">O(n)</code></td> <!-- Link -->
-      <td><code class="red">O(m+nlog(n))</code></td> <!-- Seq -->
-    </tr>
-    <tr>
-      <td><a href="http://en.wikipedia.org/wiki/Parent_pointer_tree">Tree With Union by Height or by Weight</a></td>
-      <td><code class="green">O(1)</code></td> <!-- Makeset -->
-      <td><code class="yellow">O(log(n))</code></td> <!-- Findset -->
-      <td><code class="green">O(1)</code></td> <!-- Link -->
-      <td><code class="orange">O(mlog(n))</code></td> <!-- Seq -->
-    </tr>
-    <tr>
-      <td><a href="http://en.wikipedia.org/wiki/Disjoint-set_data_structure#Disjoint-set_forests">Tree With Union by Weight and Path Compression</a></td>
-      <td><code class="green">O(1)</code></td> <!-- Makeset -->
-      <td><code class="yellow">O(log(n))</code></td> <!-- Findset -->
-      <td><code class="green">O(1)</code></td> <!-- Link -->
-      <td><code rel="tooltip" title="iterated logarithm (log star)" class="orange">O(mlog*(n))</code></td> <!-- Seq -->
     </tr>
   </tbody>
 </table>
