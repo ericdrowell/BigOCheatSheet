@@ -303,4 +303,164 @@
       <td><code class="yellow">O(n)</code></td>
    </tr>
 
+<table class="table table-bordered table-striped">
+    <tr>
+      <th>Data Structure</th>
+      <th colspan="7">Time Complexity</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Storage</th>
+      <th>Add Vertex</th>
+      <th>Add Edge</th>
+      <th>Remove Vertex</th>
+      <th>Remove Edge</th>
+      <th>Query</th>
+    </tr>
+    <h2 id="graph-operations">Graph Data Structure Operations</h2>
+    <tr>
+      <td><a href="http://en.wikipedia.org/wiki/Adjacency_list">Adjacency list</a></td>
+      <td><code class="yellow">O(|V|+|E|)</code></td>
+      <td><code class="green">O(1)</code></td>
+      <td><code class="green">O(1)</code></td>
+      <td><code class="yellow">O(|V| + |E|)</code></td>
+      <td><code class="yellow">O(|E|)</code></td>
+      <td><code class="yellow">O(|V|)</code></td>
+    </tr>
+    <tr>
+      <td><a href="http://en.wikipedia.org/wiki/Incidence_list">Incidence list</a></td>
+      <td><code class="yellow">O(|V|+|E|)</code></td>
+      <td><code class="green">O(1)</code></td>
+      <td><code class="green">O(1)</code></td>
+      <td><code class="yellow">O(|E|)</code></td>
+      <td><code class="yellow">O(|E|)</code></td>
+      <td><code class="yellow">O(|E|)</code></td>
+    </tr>
+    <tr>
+      <td><a href="http://en.wikipedia.org/wiki/Adjacency_matrix">Adjacency matrix</a></td>
+      <td><code class="red">O(|V|^2)</code></td>
+      <td><code class="red">O(|V|^2)</code></td>
+      <td><code class="green">O(1)</code></td>
+      <td><code class="red">O(|V|^2)</code></td>
+      <td><code class="green">O(1)</code></td>
+      <td><code class="green">O(1)</code></td>
+    </tr>
+    <tr>
+      <td><a href="http://en.wikipedia.org/wiki/Incidence_matrix">Incidence matrix</a></td>
+      <td><code class="red">O(|V| &sdot; |E|)</code></td>
+      <td><code class="red">O(|V| &sdot; |E|)</code></td>
+      <td><code class="red">O(|V| &sdot; |E|)</code></td>
+      <td><code class="red">O(|V| &sdot; |E|)</code></td>
+      <td><code class="red">O(|V| &sdot; |E|)</code></td>
+      <td><code class="yellow">O(|E|)</code></td>
+    </tr>
+</table>
+
+<h2 id="heaps">Heap Data Structure Operations</h2>
+<table class="table table-bordered table-striped">
+    <tr>
+      <th>Data Structure</th>
+      <th colspan="7">Time Complexity</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Find Max</th>
+      <th>Extract Max</th>
+      <th>Increase Key</th>
+      <th>Insert</th>
+      <th>Delete</th>
+      <th>Merge</th>
+    </tr>
+
+    <tr>
+      <td><a href="http://en.wikipedia.org/wiki/Binary_heap">Binary Heap</a></td>
+      <td><code class="green">O(1)</code></td>
+      <td><code class="yellow-green">O(log(n))</code></td>
+      <td><code class="yellow-green">O(log(n))</code></td>
+      <td><code class="yellow-green">O(log(n))</code></td>
+      <td><code class="yellow-green">O(log(n))</code></td>
+      <td><code class="yellow">O(m+n)</code></td>
+    </tr>
+    <tr>
+      <td><a href="http://en.wikipedia.org/wiki/Pairing_heap">Pairing Heap</a></td>
+      <td><code class="green">O(1)</code></td> <!-- find max -->
+      <td><code rel="tooltip" title="Amortized" class="yellow-green">O(log(n))</code></td> <!-- extract max -->
+      <td><code rel="tooltip" title="Amortized; tight bound not precisely known. See Wikipedia-article." class="yellow-green">O(log(n))</code></td> <!-- increase key -->
+      <td><code class="green">O(1)</code></td> <!-- insert -->
+      <td><code rel="tooltip" title="Amortized; increase key to infinity followed by extract max." class="yellow-green">O(log(n))</code></td> <!-- delete -->
+      <td><code class="green">O(1)</code></td> <!-- merge -->
+    </tr>
+    <tr>
+      <td><a href="http://en.wikipedia.org/wiki/Binomial_heap">Binomial Heap</a></td>
+      <td><code rel="tooltip" title="With aux pointer" class="green">O(1)</code></td>
+      <td><code class="yellow-green">O(log(n))</code></td>
+      <td><code class="yellow-green">O(log(n))</code></td>
+      <td><code rel="tooltip" title="Amortized" class="green">O(1)</code></td>
+      <td><code class="yellow-green">O(log(n))</code></td>
+      <td><code class="yellow-green">O(log(n))</code></td>
+    </tr>
+    <tr>
+      <td><a href="http://en.wikipedia.org/wiki/Fibonacci_heap">Fibonacci Heap</a></td>
+      <td><code class="green">O(1)</code></td>
+      <td><code rel="tooltip" title="Amortized" class="yellow-green">O(log(n))</code></td>
+      <td><code rel="tooltip" title="Amortized" class="green">O(1)</code></td>
+      <td><code class="green">O(1)</code></td>
+      <td><code rel="tooltip" title="Amortized" class="yellow-green">O(log(n))</code></td>
+      <td><code class="green">O(1)</code></td>
+    </tr>
+
+</table>
+
+<h2 id="graph-algorithms">Graph Algorithms</h2>
+<table class="table table-bordered table-striped">
+
+    <tr>
+      <th>Algorithm</th>
+      <th colspan="2">Time Complexity</th>
+      <th>Space Complexity</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Average</th>
+      <th>Worst</th>
+      <th>Worst</th>
+    </tr>
+
+    <tr>
+      <td><a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm">Dijkstra's algorithm</a></td>
+      <td><code class="orange">O(|E| log |V|)</code></td>
+      <td><code class="red">O(|V|^2)</code></td>
+      <td><code class="yellow">O(|V| + |E|)</code></td>
+    </tr>
+    <tr>
+      <td><a href="https://en.wikipedia.org/wiki/A*_search_algorithm">A* search algorithm</a></td>
+      <td><code class="yellow">O(|E|)</code></td>
+      <td><code class="red">O(b^d)</code></td>
+      <td><code class="red">O(b^d)</code></td>
+    </tr>
+    <tr>
+      <td><a href="https://en.wikipedia.org/wiki/Prim%27s_algorithm">Prim's algorithm</a></td>
+      <td><code class="orange">O(|E| log |V|)</code></td>
+      <td><code class="red">O(|V|^2)</code></td>
+      <td><code class="yellow">O(|V| + |E|)</code></td>
+    </tr>
+    <tr>
+      <td><a href="https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm">BellmanFord algorithm</a></td>
+      <td><code class="red">O(|E| &sdot; |V|)</code></td>
+      <td><code class="red">O(|E| &sdot; |V|)</code></td>
+      <td><code class="yellow">O(|V|)</code></td>
+    </tr>
+    <tr>
+      <td><a href="https://en.wikipedia.org/wiki/Floyd%E2%80%93Warshall_algorithm">Floyd-Warshall algorithm</a></td>
+      <td><code class="red">O(|V|^3)</code></td>
+      <td><code class="red">O(|V|^3)</code></td>
+      <td><code class="red">O(|V|^2)</code></td>
+    </tr>
+    <tr>
+      <td><a href="https://en.wikipedia.org/wiki/Topological_sorting">Topological sort</a></td>
+      <td><code class="yellow">O(|V| + |E|)</code></td>
+      <td><code class="yellow">O(|V| + |E|)</code></td>
+      <td><code class="yellow">O(|V| + |E|)</code></td>
+    </tr>
+
 </table>
