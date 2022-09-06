@@ -91,7 +91,7 @@ Just like O notation provide an asymptotic upper bound, __Ω notation__ provides
 
 | | Big O | Big Ω / Omega | Big θ / Theta |
 | --- | --- | --- | --- |
-| Condition operator-wise | `<=` | `>=` | `==`
+| Conditional operator-wise | `<=` | `>=` | `==`
 | Rate of growth of an algorithm / data structure | is less than | is greater than | is equal to |
 | Bound | upper | lower | above and below |
 | Notation | `O(n)` | `Ω(n)` | `θ(n)` |
