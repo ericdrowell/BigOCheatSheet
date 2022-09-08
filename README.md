@@ -13,9 +13,9 @@
 
 ## Pengenalan
 
-Before we head into the website, we need to know what is __Asymptotic Computational Complexity__ first. If you were already familiar with this term, just skip and jump into the [Big-O Cheat Sheet Website](https://www.bigocheatsheet.com/).
+Sebelum kita menuju ke situs, kita perlu tahu dahulu apa itu __Kompleksitas Komputasi Asimtotik__. Jika dirimu sudah familiar dengan istilah ini, lewati dan langsung menuju ke [Big-O Cheat Sheet Website](https://www.bigocheatsheet.com/).
 
-![illustration_big_notation](big.png)
+![ilustrasi_big_notation](big.png)
 
 **[🔝 back to top](#bigocheatsheet)**
 
