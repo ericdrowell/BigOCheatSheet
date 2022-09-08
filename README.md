@@ -21,9 +21,9 @@ Sebelum kita menuju ke situs, kita perlu tahu dahulu apa itu __Kompleksitas Komp
 
 ## Kompleksitas Komputasi Asimtotik
 
-> In computational complexity theory, __asymptotic computational complexity__ is the usage of __asymptotic analysis__ for _the estimation of computational complexity of algorithms and computational problems_, commonly associated with the usage of the big O notation. - [Wikipedia](https://en.wikipedia.org/wiki/Asymptotic_computational_complexity)
+> Dalam teori kompleksitas komputasi, __kompleksitas komputasi asimtotik__ merupakan penggunaan __analisis asimtotik__ untuk _estimasi kompleksitas komputasi algoritma dan masalah komputasi_, yang umumnya dikaitkan dengan penggunaan notasi _big O_. - [Wikipedia](https://en.wikipedia.org/wiki/Asymptotic_computational_complexity)
 
-To understand those terms, we need to know what is an __Asymptote__ first before we deep dive into __Asymptotic Analysis__.
+Untuk memahami istilah-istilah tersebut, kita perlu tahu dahulu apa itu __Asimtot__ sebelum kita menyelam dalam __Analisis Asimtotik__.
 
 **[🔝 kembali ke atas](#bigocheatsheet)**
 
