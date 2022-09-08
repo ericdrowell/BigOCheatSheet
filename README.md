@@ -17,7 +17,7 @@ Sebelum kita menuju ke situs, kita perlu tahu dahulu apa itu __Kompleksitas Komp
 
 ![ilustrasi_big_notation](big.png)
 
-**[🔝 back to top](#bigocheatsheet)**
+**[🔝 kembali ke atas](#bigocheatsheet)**
 
 ## Kompleksitas Komputasi Asimtotik
 
@@ -25,7 +25,7 @@ Sebelum kita menuju ke situs, kita perlu tahu dahulu apa itu __Kompleksitas Komp
 
 To understand those terms, we need to know what is an __Asymptote__ first before we deep dive into __Asymptotic Analysis__.
 
-**[🔝 back to top](#bigocheatsheet)**
+**[🔝 kembali ke atas](#bigocheatsheet)**
 
 ## Asimtot
 
@@ -40,7 +40,7 @@ Here's a visual example from [jarednielsen](https://jarednielsen.com/static/32c1
 
 Now we get the idea of an __asymptote__, let's continue to learn about __Asymptotic Analysis__.
 
-**[🔝 back to top](#bigocheatsheet)**
+**[🔝 kembali ke atas](#bigocheatsheet)**
 
 ## Analisis Asimtot
 
@@ -53,7 +53,7 @@ Why do we need this __asymptotic analysis__ you might ask?
 
 Because we need to estimate the computational complexity of algorithms and computational problems. To get everyone on the same page, we use these notations: __big O, big Ω and big θ__ to describe a different type of estimation.
 
-**[🔝 back to top](#bigocheatsheet)**
+**[🔝 kembali ke atas](#bigocheatsheet)**
 
 ## Big O
 
@@ -64,7 +64,7 @@ __Big O__ notation is used to describe __asymptotic upper bound__. - [GeeksForGe
 
 ![bigO_gfg](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200807150308/3363.png)
 
-**[🔝 back to top](#bigocheatsheet)**
+**[🔝 kembali ke atas](#bigocheatsheet)**
 
 ## Big Ω
 
@@ -75,7 +75,7 @@ Just like O notation provide an asymptotic upper bound, __Ω notation__ provides
 
 ![bigomega_gfg](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200807150659/3611.png)
 
-**[🔝 back to top](#bigocheatsheet)**
+**[🔝 kembali ke atas](#bigocheatsheet)**
 
 ## Big θ
 
@@ -85,7 +85,7 @@ Just like O notation provide an asymptotic upper bound, __Ω notation__ provides
 
 ![bigtheta_gfg](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200807150743/36955.png)
 
-**[🔝 back to top](#bigocheatsheet)**
+**[🔝 kembali ke atas](#bigocheatsheet)**
 
 ## Perbedaan Ketiganya
 
@@ -96,7 +96,7 @@ Just like O notation provide an asymptotic upper bound, __Ω notation__ provides
 | Bound | upper | lower | above and below |
 | Notation | `O(n)` | `Ω(n)` | `θ(n)` |
 
-**[🔝 back to top](#bigocheatsheet)**
+**[🔝 kembali ke atas](#bigocheatsheet)**
 
 ## Konteks Kasus Terburuk, Terbaik, Rata-rata
 
@@ -116,7 +116,7 @@ __There isn’t one__.
 >> Insertion Sort’s worst case rate of growth is __at least__ `Ω(n)`  
 >> Insertion Sort’s worst case rate of growth is __exactly__ `Θ(n^2)`
 
-**[🔝 back to top](#bigocheatsheet)**
+**[🔝 kembali ke atas](#bigocheatsheet)**
 
 ## Referensi
 
@@ -132,4 +132,4 @@ __There isn’t one__.
 
 [Difference between Big Oh, Big Omega and Big Theta](https://www.geeksforgeeks.org/difference-between-big-oh-big-omega-and-big-theta/) ◽ last accessed 6 September 2022
 
-**[🔝 back to top](#bigocheatsheet)**
+**[🔝 kembali ke atas](#bigocheatsheet)**
