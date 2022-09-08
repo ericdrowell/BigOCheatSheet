@@ -1,33 +1,33 @@
 # BigOCheatSheet
 
-* [Introduction](#introduction)
-* [Asymptotic Computational Complexity](#asymptotic-computational-complexity)
-* [Asymptote](#asymptote)
-* [Asymptotic Analysis](#asymptotic-analysis)
+* [Pengenalan](#pengenalan)
+* [Kompleksitas Komputasi Asimtotik](#kompleksitas-komputasi-asimtotik)
+* [Asimtot](#asimtot)
+* [Analisis Asimtot](#analisis-asimtot)
 * [Big O](#big-o)
 * [Big Omega](#big-ω)
 * [Big Theta](#big-θ)
-* [The Differences Between These Three](#the-differences-between-these-three)
-* [The Worst, Best, Average/Expected Case Context](#the-worst-best-averageexpected-case-context)
-* [References](#references)
+* [Perbedaan Ketiganya](#perbedaan-ketiganya)
+* [Konteks Kasus Terburuk, Terbaik, Rata-rata](#konteks-kasus-terburuk-terbaik-rata-rata)
+* [Referensi](#referensi)
 
-## Introduction
+## Pengenalan
 
-Before we head into the website, we need to know what is __Asymptotic Computational Complexity__ first. If you were already familiar with this term, just skip and jump into the [Big-O Cheat Sheet Website](https://www.bigocheatsheet.com/).
+Sebelum kita menuju ke situs, kita perlu tahu dahulu apa itu __Kompleksitas Komputasi Asimtotik__. Jika dirimu sudah familiar dengan istilah ini, lewati dan langsung menuju ke [Big-O Cheat Sheet Website](https://www.bigocheatsheet.com/).
 
-![illustration_big_notation](big.png)
+![ilustrasi_big_notation](big.png)
 
-**[🔝 back to top](#bigocheatsheet)**
+**[🔝 kembali ke atas](#bigocheatsheet)**
 
-## Asymptotic Computational Complexity
+## Kompleksitas Komputasi Asimtotik
 
-> In computational complexity theory, __asymptotic computational complexity__ is the usage of __asymptotic analysis__ for _the estimation of computational complexity of algorithms and computational problems_, commonly associated with the usage of the big O notation. - [Wikipedia](https://en.wikipedia.org/wiki/Asymptotic_computational_complexity)
+> Dalam teori kompleksitas komputasi, __kompleksitas komputasi asimtotik__ merupakan penggunaan __analisis asimtotik__ untuk _estimasi kompleksitas komputasi algoritma dan masalah komputasi_, yang umumnya dikaitkan dengan penggunaan notasi _big O_. - [Wikipedia](https://en.wikipedia.org/wiki/Asymptotic_computational_complexity)
 
-To understand those terms, we need to know what is an __Asymptote__ first before we deep dive into __Asymptotic Analysis__.
+Untuk memahami istilah-istilah tersebut, kita perlu tahu dahulu apa itu __Asimtot__ sebelum kita menyelam dalam __Analisis Asimtotik__.
 
-**[🔝 back to top](#bigocheatsheet)**
+**[🔝 kembali ke atas](#bigocheatsheet)**
 
-## Asymptote
+## Asimtot
 
 > In analytic geometry, an __asymptote__ of a curve is a line such that the distance between the curve and the line approaches zero as one or both of the x or y coordinates tends to infinity. - [Wikipedia](https://en.wikipedia.org/wiki/Asymptote)
 
@@ -40,9 +40,9 @@ Here's a visual example from [jarednielsen](https://jarednielsen.com/static/32c1
 
 Now we get the idea of an __asymptote__, let's continue to learn about __Asymptotic Analysis__.
 
-**[🔝 back to top](#bigocheatsheet)**
+**[🔝 kembali ke atas](#bigocheatsheet)**
 
-## Asymptotic Analysis
+## Analisis Asimtot
 
 > In mathematical analysis, __asymptotic analysis__, also known as __asymptotics__, is _a method of describing limiting behavior_. - [Wikipedia](https://en.wikipedia.org/wiki/Asymptotic_analysis)
 
@@ -53,7 +53,7 @@ Why do we need this __asymptotic analysis__ you might ask?
 
 Because we need to estimate the computational complexity of algorithms and computational problems. To get everyone on the same page, we use these notations: __big O, big Ω and big θ__ to describe a different type of estimation.
 
-**[🔝 back to top](#bigocheatsheet)**
+**[🔝 kembali ke atas](#bigocheatsheet)**
 
 ## Big O
 
@@ -64,7 +64,7 @@ __Big O__ notation is used to describe __asymptotic upper bound__. - [GeeksForGe
 
 ![bigO_gfg](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200807150308/3363.png)
 
-**[🔝 back to top](#bigocheatsheet)**
+**[🔝 kembali ke atas](#bigocheatsheet)**
 
 ## Big Ω
 
@@ -75,7 +75,7 @@ Just like O notation provide an asymptotic upper bound, __Ω notation__ provides
 
 ![bigomega_gfg](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200807150659/3611.png)
 
-**[🔝 back to top](#bigocheatsheet)**
+**[🔝 kembali ke atas](#bigocheatsheet)**
 
 ## Big θ
 
@@ -85,9 +85,9 @@ Just like O notation provide an asymptotic upper bound, __Ω notation__ provides
 
 ![bigtheta_gfg](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200807150743/36955.png)
 
-**[🔝 back to top](#bigocheatsheet)**
+**[🔝 kembali ke atas](#bigocheatsheet)**
 
-## The Differences Between These Three
+## Perbedaan Ketiganya
 
 | | Big O | Big Ω / Omega | Big θ / Theta |
 | --- | --- | --- | --- |
@@ -96,9 +96,9 @@ Just like O notation provide an asymptotic upper bound, __Ω notation__ provides
 | Bound | upper | lower | above and below |
 | Notation | `O(n)` | `Ω(n)` | `θ(n)` |
 
-**[🔝 back to top](#bigocheatsheet)**
+**[🔝 kembali ke atas](#bigocheatsheet)**
 
-## The Worst, Best, Average/Expected Case Context
+## Konteks Kasus Terburuk, Terbaik, Rata-rata
 
 What is the relationship between
 > __best case__ / __worst case__ / __expected case__
@@ -116,9 +116,9 @@ __There isn’t one__.
 >> Insertion Sort’s worst case rate of growth is __at least__ `Ω(n)`  
 >> Insertion Sort’s worst case rate of growth is __exactly__ `Θ(n^2)`
 
-**[🔝 back to top](#bigocheatsheet)**
+**[🔝 kembali ke atas](#bigocheatsheet)**
 
-## References
+## Referensi
 
 [Big-O Cheat Sheet Website](https://www.bigocheatsheet.com/) ◽ last accessed 6 September 2022
 
@@ -132,4 +132,4 @@ __There isn’t one__.
 
 [Difference between Big Oh, Big Omega and Big Theta](https://www.geeksforgeeks.org/difference-between-big-oh-big-omega-and-big-theta/) ◽ last accessed 6 September 2022
 
-**[🔝 back to top](#bigocheatsheet)**
+**[🔝 kembali ke atas](#bigocheatsheet)**
