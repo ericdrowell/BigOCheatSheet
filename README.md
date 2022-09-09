@@ -29,16 +29,16 @@ Untuk memahami istilah-istilah tersebut, kita perlu tahu dahulu apa itu __Asimto
 
 ## Asimtot
 
-> In analytic geometry, an __asymptote__ of a curve is a line such that the distance between the curve and the line approaches zero as one or both of the x or y coordinates tends to infinity. - [Wikipedia](https://en.wikipedia.org/wiki/Asymptote)
+> Dalam geometri analitis, __asimtot__ dari sebuah kurva adalah sebuah garis yang sedemikian rupa sehingga jarak antara kurva dan garis tersebut mendekati nol seiring x atau y (salah satu atau keduanya) mendekati takhingga. - [Wikipedia](https://id.wikipedia.org/wiki/Asimtot)
 
-Here's a visual example from [jarednielsen](https://jarednielsen.com/static/32c1589243f13448fac04d22cb735af9/40601/desmos-asymptote-01.png)
+Berikut contoh visual dari [jarednielsen](https://jarednielsen.com/static/32c1589243f13448fac04d22cb735af9/40601/desmos-asymptote-01.png)
 
     y = 1/x
 ![function of 1/x](https://jarednielsen.com/static/32c1589243f13448fac04d22cb735af9/40601/desmos-asymptote-01.png)
 
-> __No matter how large (or small) the value of x, our curve will never touch the x or y axes__. Even if that number is Infinity. 🐢🏃‍♀️. Especially if that number is zero. Why? It’s mathematically impossible to divide by 0. In the chart above, __the x and y axes__ are the __asymptotes of the equation `y = 1 / x`__. But any line can be an asymptote. We’re not limited to horizontal and vertical lines. - [jarednielsen](https://jarednielsen.com/big-o-omega-theta/)
+> __Tak peduli seberapa besar atau kecil nilai x, kurva tidak akan pernah menyentuh sumbu x atau y__. Bahkan jika nilainya takhingga. 🐢🏃‍♀️.Terutama jika nilainya nol. Mengapa? Secara matematis tidak mungkin untuk membagi dengan nol. Pada grafik diatas, __sumbu x dan y__ merupakan __asimtot dari persamaan__ `y = 1 / x`. Namun garis apapun bisa menjadi asimtot. Tidak terbatas pada garis horizontal dan vertikal. - [jarednielsen](https://jarednielsen.com/big-o-omega-theta/)
 
-Now we get the idea of an __asymptote__, let's continue to learn about __Asymptotic Analysis__.
+Sekarang kita dapat ide tentang __asimtot__, ayo lanjut mempelajari mengenai __Analisis Asimtotik__.
 
 **[🔝 kembali ke atas](#bigocheatsheet)**
 
