@@ -44,14 +44,13 @@ Sekarang kita dapat ide tentang __asimtot__, ayo lanjut mempelajari mengenai __A
 
 ## Analisis Asimtot
 
-> In mathematical analysis, __asymptotic analysis__, also known as __asymptotics__, is _a method of describing limiting behavior_. - [Wikipedia](https://en.wikipedia.org/wiki/Asymptotic_analysis)
+> Dalam analisis matematis, __analisis asimtotik__, juga disebut sebagai __asimtotik_ merupakan _metode untuk menggambarkan perilaku limit_. - [Wikipedia](https://en.wikipedia.org/wiki/Asymptotic_analysis)
 
-For example, we get from [jarednielsen](https://jarednielsen.com/big-o-omega-theta/).
-Given this function `f(x) = x^2 + 2x` , `x` increases in value (approaches infinity) and `2x` becomes insignificant compared to `x^2`. We then simply say that `f(x)` is __asymptotically__ equivalent to `x^2`
+Sebagai contoh kita dapat dari [jarednielsen](https://jarednielsen.com/big-o-omega-theta/). Diberikan fungsi `f(x) = x^2 + 2x`, dimana `x` nilainya meningkat (mendekati takhingga) dan `2x` menjadi tak signifikan dibandingkan dengan `x^2`. Sederhananya, kita dapat katakan `f(x)` ekuivalen secara asimtotik dengan `x^2`.
 
-Why do we need this __asymptotic analysis__ you might ask?
+Mengapa kita perlu __analisis asimtotik__ ini dirimu mungkin bertanya?
 
-Because we need to estimate the computational complexity of algorithms and computational problems. To get everyone on the same page, we use these notations: __big O, big Ω and big θ__ to describe a different type of estimation.
+Karena kita perlu mengestimasi kompleksitas komputasional dari algoritma dan masalah komputasional. Agar semua orang sepakat pada hal yang sama, kita menggunakan notasi-notasi ini: __big O, big Ω and big θ__ untuk menggambarkan tipe estimasi yang berbeda.
 
 **[🔝 kembali ke atas](#bigocheatsheet)**
 
