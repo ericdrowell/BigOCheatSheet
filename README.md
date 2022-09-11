@@ -10,6 +10,7 @@
 * [The Differences Between These Three](#the-differences-between-these-three)
 * [The Worst, Best, Average/Expected Case Context](#the-worst-best-averageexpected-case-context)
 * [References](#references)
+* [Translations](#translations)
 
 ## Introduction
 
@@ -133,3 +134,8 @@ __There isn’t one__.
 [Difference between Big Oh, Big Omega and Big Theta](https://www.geeksforgeeks.org/difference-between-big-oh-big-omega-and-big-theta/) ◽ last accessed 6 September 2022
 
 **[🔝 back to top](#bigocheatsheet)**
+
+## Translations
+
+* :indonesia: **Indonesian:**
+   * [ranggakd/BigOCheatSheet](https://github.com/ranggakd/BigOCheatSheet)
